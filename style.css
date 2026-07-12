@@ -13,21 +13,19 @@
     --vocab-bg: rgba(47, 125, 74, 0.08); 
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-base: #121613; 
-        --gradient-1: rgba(59, 94, 64, 0.15);
-        --gradient-2: rgba(30, 45, 35, 0.2);
-        --gradient-3: rgba(20, 30, 22, 0.2);
-        --text-main: #e2ede4; 
-        --text-verb: #52a46e; 
-        --glass-bg: rgba(25, 35, 28, 0.45);
-        --glass-border: rgba(255, 255, 255, 0.06);
-        --glass-shadow: rgba(0, 0, 0, 0.2);
-        --table-border: rgba(255, 255, 255, 0.05);
-        --table-hover: rgba(82, 164, 110, 0.1);
-        --vocab-bg: rgba(82, 164, 110, 0.15);
-    }
+html.dark {
+    --bg-base: #121613; 
+    --gradient-1: rgba(59, 94, 64, 0.15);
+    --gradient-2: rgba(30, 45, 35, 0.2);
+    --gradient-3: rgba(20, 30, 22, 0.2);
+    --text-main: #e2ede4; 
+    --text-verb: #52a46e; 
+    --glass-bg: rgba(25, 35, 28, 0.45);
+    --glass-border: rgba(255, 255, 255, 0.06);
+    --glass-shadow: rgba(0, 0, 0, 0.2);
+    --table-border: rgba(255, 255, 255, 0.05);
+    --table-hover: rgba(82, 164, 110, 0.1);
+    --vocab-bg: rgba(82, 164, 110, 0.15);
 }
 
 * {
@@ -51,7 +49,32 @@ body {
             var(--gradient-3)
         ),
         var(--bg-base);
-    padding: 50px 25px;
+    padding: 80px 25px 50px;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    box-shadow: 0 4px 12px 0 var(--glass-shadow);
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: transform 0.2s ease;
+    z-index: 1000;
+}
+
+#theme-toggle:active {
+    transform: scale(0.95);
 }
 
 main {
@@ -146,7 +169,8 @@ main {
     opacity: 0.55;
 }
 
-.conjugation-section {
+.conjugation-section,
+.practice-section {
     margin-bottom: 70px;
     padding: 35px 40px;
     border-radius: 16px;
@@ -155,12 +179,6 @@ main {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     box-shadow: 0 8px 32px 0 var(--glass-shadow);
-}
-
-section,
-.examples-section,
-.vocabulary-section {
-    margin-bottom: 60px;
 }
 
 h2 {
@@ -236,8 +254,18 @@ tbody tr:hover {
     color: var(--text-verb);
 }
 
+.vocabulary-wrapper {
+    border-top: 1px solid var(--table-border);
+    margin-top: 35px;
+    padding-top: 35px;
+}
+
 .example-block {
     margin-bottom: 30px;
+}
+
+.example-block:last-child {
+    margin-bottom: 0;
 }
 
 .example-pt {
@@ -272,7 +300,15 @@ tbody tr:hover {
 
 @media (max-width: 700px) {
     body {
-        padding: 30px 15px;
+        padding: 80px 15px 30px;
+    }
+
+    #theme-toggle {
+        top: 15px;
+        right: 15px;
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
     }
 
     .example-main {
@@ -280,9 +316,15 @@ tbody tr:hover {
         padding: 15px 20px;
     }
 
-    .conjugation-section {
+    .conjugation-section,
+    .practice-section {
         margin-bottom: 45px;
         padding: 25px 20px;
+    }
+
+    .vocabulary-wrapper {
+        margin-top: 25px;
+        padding-top: 25px;
     }
 
     #main-example-pt {
