@@ -4,146 +4,77 @@
     "pronunciation": "fa-LAR",
     "english": "speak / talk",
     "type": "regular -ar verb",
-    "learning": { "frequency_rank": 25, "difficulty": 1, "importance": 4, "learning_priority": 30, "level": "A1" },
-    "present": { "eu": "falo", "você": "fala", "ele/ela": "fala", "nós": "falamos", "eles/elas": "falam" },
-    "perfect": { "eu": "falei", "você": "falou", "ele/ela": "falou", "nós": "falamos", "eles/elas": "falaram" },
-    "imperfect": { "eu": "falava", "você": "falava", "ele/ela": "falava", "nós": "falávamos", "eles/elas": "falavam" },
-    "future": { "eu": "falarei", "você": "falará", "ele/ela": "falará", "nós": "falaremos", "eles/elas": "falarão" },
+    "learning": {
+      "frequency_rank": 25,
+      "difficulty": 1,
+      "importance": 4,
+      "learning_priority": 30,
+      "level": "A1"
+    },
+    "present": {
+      "eu": "falo",
+      "você": "fala",
+      "ele/ela": "fala",
+      "nós": "falamos",
+      "eles/elas": "falam"
+    },
+    "perfect": {
+      "eu": "falei",
+      "você": "falou",
+      "ele/ela": "falou",
+      "nós": "falamos",
+      "eles/elas": "fataram"
+    },
+    "imperfect": {
+      "eu": "falava",
+      "você": "falava",
+      "ele/ela": "falava",
+      "nós": "falávamos",
+      "eles/elas": "falavam"
+    },
+    "future": {
+      "eu": "falarei",
+      "você": "falará",
+      "ele/ela": "falará",
+      "nós": "falaremos",
+      "eles/elas": "falarão"
+    },
     "gerund": "falando",
     "examples": [
-      { "pt": "Eu falo português com alguns amigos brasileiros muito simpáticos durante longas conversas online.", "en": "I speak Portuguese with some very friendly Brazilian friends during long online conversations." },
-      { "pt": "Ela falou sobre um projeto importante durante uma reunião bastante interessante no trabalho.", "en": "She talked about an important project during a very interesting meeting at work." },
-      { "pt": "Nós falaremos sobre novas ideias criativas depois do jantar tranquilo em família.", "en": "We will talk about new creative ideas after the quiet family dinner." }
+      {
+        "pt": "Eu falo português com alguns amigos brasileiros muito simpáticos durante longas conversas online.",
+        "en": "I speak Portuguese with some very friendly Brazilian friends during long online conversations."
+      },
+      {
+        "pt": "Ela falou sobre um projeto importante durante uma reunião bastante interessante no trabalho.",
+        "en": "She talked about an important project during a very interesting meeting at work."
+      },
+      {
+        "pt": "Nós falaremos sobre novas ideias criativas depois do jantar tranquilo em família.",
+        "en": "We will talk about new creative ideas after the quiet family dinner."
+      }
     ],
     "vocabulary": [
-      { "pt": "amigo", "en": "friend", "type": "noun" },
-      { "pt": "brasileiro", "en": "Brazilian", "type": "adjective" },
-      { "pt": "simpático", "en": "friendly / nice", "type": "adjective" },
-      { "pt": "conversa", "en": "conversation", "type": "noun" },
-      { "pt": "projeto", "en": "project", "type": "noun" },
-      { "pt": "importante", "en": "important", "type": "adjective" },
-      { "pt": "reunião", "en": "meeting", "type": "noun" },
-      { "pt": "criativo", "en": "creative", "type": "adjective" }
+      {
+        "pt": "amigo",
+        "en": "friend",
+        "type": "noun"
+      },
+      {
+        "pt": "brasileiro",
+        "en": "Brazilian",
+        "type": "adjective"
+      },
+      {
+        "pt": "simpático",
+        "en": "friendly / nice",
+        "type": "adjective"
+      },
+      {
+        "pt": "conversa",
+        "en": "conversation",
+        "type": "noun"
+      }
     ]
-  },
-  {
-    "infinitive": "comer",
-    "pronunciation": "co-MER",
-    "english": "eat",
-    "type": "regular -er verb",
-    "learning": { "frequency_rank": 82, "difficulty": 1, "importance": 4, "learning_priority": 29, "level": "A1" },
-    "present": { "eu": "como", "você": "come", "ele/ela": "come", "nós": "comemos", "eles/elas": "comem" },
-    "perfect": { "eu": "comi", "você": "comeu", "ele/ela": "comeu", "nós": "comemos", "eles/elas": "comeram" },
-    "imperfect": { "eu": "comia", "você": "comia", "ele/ela": "comia", "nós": "comíamos", "eles/elas": "comiam" },
-    "future": { "eu": "comerei", "você": "comerá", "ele/ela": "comerá", "nós": "comeremos", "eles/elas": "comerão" },
-    "gerund": "comendo",
-    "examples": [
-      { "pt": "Eu como comida caseira saudável todos os dias com minha família no almoço.", "en": "I eat healthy homemade food every day with my family at lunch." },
-      { "pt": "Eles comeram uma pizza maravilhosa no restaurante italiano novo ontem à noite.", "en": "They ate a wonderful pizza at the new Italian restaurant last night." },
-      { "pt": "Nós comeremos frutas frescas e iogurte natural amanhã cedo antes do treino.", "en": "We will eat fresh fruit and natural yogurt tomorrow morning before the workout." }
-    ],
-    "vocabulary": [
-      { "pt": "comida", "en": "food", "type": "noun" },
-      { "pt": "caseiro", "en": "homemade", "type": "adjective" },
-      { "pt": "saudável", "en": "healthy", "type": "adjective" },
-      { "pt": "almoço", "en": "lunch", "type": "noun" },
-      { "pt": "maravilhoso", "en": "wonderful", "type": "adjective" },
-      { "pt": "fruta", "en": "fruit", "type": "noun" },
-      { "pt": "amanhã", "en": "tomorrow", "type": "adverb" },
-      { "pt": "treino", "en": "workout / training", "type": "noun" }
-    ]
-  },
-  {
-    "infinitive": "abrir",
-    "pronunciation": "a-BRIR",
-    "english": "open",
-    "type": "regular -ir verb",
-    "learning": { "frequency_rank": 95, "difficulty": 1, "importance": 4, "learning_priority": 28, "level": "A1" },
-    "present": { "eu": "abro", "você": "abre", "ele/ela": "abre", "nós": "abrimos", "eles/elas": "abrem" },
-    "perfect": { "eu": "abri", "você": "abriu", "ele/ela": "abriu", "nós": "abrimos", "eles/elas": "abriram" },
-    "imperfect": { "eu": "abria", "você": "abria", "ele/ela": "abria", "nós": "abríamos", "eles/elas": "abriam" },
-    "future": { "eu": "abrirei", "você": "abrirá", "ele/ela": "abrirá", "nós": "abriremos", "eles/elas": "abrirão" },
-    "gerund": "abrindo",
-    "examples": [
-      { "pt": "Eu abro a janela grande do meu escritório cedo para deixar entrar o ar puro.", "en": "I open the large window of my office early to let in the fresh air." },
-      { "pt": "O gerente abriu a loja principal pontualmente às nove horas da manhã hoje.", "en": "The manager opened the main store punctually at nine o'clock in the morning today." },
-      { "pt": "Você abrirá os presentes de aniversário com seus amigos queridos durante a festa?", "en": "Will you open the birthday gifts with your dear friends during the party?" }
-    ],
-    "vocabulary": [
-      { "pt": "janela", "en": "window", "type": "noun" },
-      { "pt": "escritório", "en": "office", "type": "noun" },
-      { "pt": "cedo", "en": "early", "type": "adverb" },
-      { "pt": "puro", "en": "pure / fresh", "type": "adjective" },
-      { "pt": "loja", "en": "store / shop", "type": "noun" },
-      { "pt": "presente", "en": "gift / present", "type": "noun" },
-      { "pt": "aniversário", "en": "birthday", "type": "noun" },
-      { "pt": "festa", "en": "party", "type": "noun" }
-    ]
-  },
-  {
-    "infinitive": "ser",
-    "pronunciation": "SER",
-    "english": "be (permanent/identity)",
-    "type": "irregular verb",
-    "learning": { "frequency_rank": 2, "difficulty": 3, "importance": 5, "learning_priority": 27, "level": "A1" },
-    "present": { "eu": "sou", "você": "é", "ele/ela": "é", "nós": "somos", "eles/elas": "são" },
-    "perfect": { "eu": "fui", "você": "foi", "ele/ela": "foi", "nós": "fomos", "eles/elas": "foram" },
-    "imperfect": { "eu": "era", "você": "era", "ele/ela": "era", "nós": "éramos", "eles/elas": "eram" },
-    "future": { "eu": "serei", "você": "será", "ele/ela": "será", "nós": "seremos", "eles/elas": "serão" },
-    "gerund": "sendo",
-    "examples": [
-      { "pt": "Eu sou estudante de engenharia e moro em uma cidade brasileira muito bonita.", "en": "I am an engineering student and I live in a very beautiful Brazilian city." },
-      { "pt": "Meus avós eram professores dedicados na escola pública local da nossa região.", "en": "My grandparents were dedicated teachers at the local public school in our region." },
-      { "pt": "Eu serei muito feliz na minha nova carreira profissional de desenvolvimento técnico.", "en": "I will be very happy in my new professional career in technical development." }
-    ],
-    "vocabulary": [
-      { "pt": "estudante", "en": "student", "type": "noun" },
-      { "pt": "cidade", "en": "city", "type": "noun" },
-      { "pt": "bonito", "en": "beautiful", "type": "adjective" },
-      { "pt": "professor", "en": "teacher", "type": "noun" },
-      { "pt": "escola", "en": "school", "type": "noun" },
-      { "pt": "feliz", "en": "happy", "type": "adjective" },
-      { "pt": "carreira", "en": "career", "type": "noun" },
-      { "pt": "novo", "en": "new", "type": "adjective" }
-    ]
-  },
-  {
-    "infinitive": "estar",
-    "pronunciation": "es-TAR",
-    "english": "be (temporary/location)",
-    "type": "irregular verb",
-    "learning": { "frequency_rank": 4, "difficulty": 2, "importance": 5, "learning_priority": 26, "level": "A1" },
-    "present": { "eu": "estou", "você": "está", "ele/ela": "está", "nós": "estamos", "eles/elas": "estão" },
-    "perfect": { "eu": "estive", "você": "esteve", "ele/ela": "esteve", "nós": "estivemos", "eles/elas": "estiveram" },
-    "imperfect": { "eu": "estava", "você": "estava", "ele/ela": "estava", "nós": "estávamos", "eles/elas": "estavam" },
-    "future": { "eu": "estarei", "você": "estará", "ele/ela": "estará", "nós": "estaremos", "eles/elas": "estarão" },
-    "gerund": "estando",
-    "examples": [
-      { "pt": "Eu estou muito cansado hoje por causa de uma longa viagem de ônibus.", "en": "I am very tired today because of a long bus trip." },
-      { "pt": "O médico estava ocupado com um paciente importante no hospital central ontem.", "en": "The doctor was busy with an important patient at the central hospital yesterday." },
-      { "pt": "Nós estaremos no aeroporto internacional de São Paulo amanhã de tarde.", "en": "We will be at the São Paulo international airport tomorrow afternoon." }
-    ],
-    "vocabulary": [
-      { "pt": "cansado", "en": "tired", "type": "adjective" },
-      { "pt": "viagem", "en": "trip / journey", "type": "noun" },
-      { "pt": "médico", "en": "doctor", "type": "noun" },
-      { "pt": "ocupado", "en": "busy", "type": "adjective" },
-      { "pt": "paciente", "en": "patient", "type": "noun" },
-      { "pt": "hospital", "en": "hospital", "type": "noun" },
-      { "pt": "aeroporto", "en": "airport", "type": "noun" },
-      { "pt": "tarde", "en": "afternoon / late", "type": "noun/adverb" }
-    ]
-  },
-  {
-    "infinitive": "fazer",
-    "pronunciation": "fa-ZER",
-    "english": "do / make",
-    "type": "irregular verb",
-    "learning": { "frequency_rank": 6, "difficulty": 3, "importance": 5, "learning_priority": 25, "level": "A1" },
-    "present": { "eu": "faço", "você": "faz", "ele/ela": "faz", "nós": "fazemos", "eles/elas": "fazem" },
-    "perfect": { "eu": "fiz", "você": "fez", "ele/ela": "fez", "nós": "fizemos", "eles/elas": "fizeram" },
-    "imperfect": { "eu": "fazia", "você": "fazia", "ele/ela": "fazia", "nós": "fazíamos", "eles/elas": "faziam" },
-    "future": { "eu": "farei", "você": "fará", "ele/ela": "fará", "nós": "faremos", "eles/elas": "farão" },
-    "gerund": "fazendo",
-    "examples": [
-      { "pt": "Eu faço o meu dever de casa na biblioteca pública nas terças-feiras.", "en": "I do my homework at the public library on Tuesdays." },
+  }
+]
