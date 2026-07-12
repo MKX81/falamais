@@ -3,96 +3,165 @@
 }
 
 
+html,
 body {
 
     margin: 0;
 
-    min-height: 100vh;
+    min-height: 100%;
 
     font-family: "Inter", sans-serif;
 
     color: #1f2933;
 
+}
+
+
+body {
+
     background:
         linear-gradient(
             135deg,
-            rgba(0, 156, 59, 0.85),
-            rgba(255, 223, 0, 0.55),
-            rgba(0, 39, 118, 0.85)
-        );
+            rgba(0,156,59,0.15),
+            rgba(255,223,0,0.18),
+            rgba(0,39,118,0.18)
+        ),
+        #faf9f5;
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    padding: 40px;
+    padding: 50px 25px;
 
 }
 
 
 
-/* Main area */
+/* Main container */
 
-.hero {
-
-    width: 100%;
-
-    min-height: 100vh;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-}
-
-
-
-/* Main card */
-
-.card {
+main {
 
     width: min(900px, 100%);
 
-    background: rgba(255,255,255,0.5);
-
-    backdrop-filter: blur(12px);
-
-    border-radius: 24px;
-
-    padding: 50px;
-
-    box-shadow:
-        0 20px 60px rgba(0,0,0,0.15);
+    margin: 0 auto;
 
 }
 
 
 
-/* Verb heading */
+/* =========================
+   First example sentence
+========================= */
 
-h1 {
 
-    margin: 0;
+.example-main {
 
     text-align: center;
 
-    font-size: clamp(3rem, 8vw, 5rem);
+    margin-bottom: 70px;
+
+}
+
+
+#main-example-pt {
+
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+
+    line-height: 1.4;
+
+    font-weight: 400;
+
+    margin: 0 auto 15px;
+
+}
+
+
+.highlight-verb {
+
+    color: #087f23;
 
     font-weight: 600;
 
-    letter-spacing: 0.08em;
+}
 
-    color: #123;
+
+#main-example-en {
+
+    font-size: 1.1rem;
+
+    opacity: 0.65;
+
+    margin: 0;
 
 }
 
 
 
-/* Pronunciation */
+
+
+/* =========================
+   Verb section
+========================= */
+
+
+.verb-section {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+
+
+.verb-title {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+
+.language {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+
+.language img {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+
+
+#verb {
+
+    font-size: clamp(3rem, 8vw, 5rem);
+
+    letter-spacing: 0.08em;
+
+    font-weight: 600;
+
+}
+
+
 
 #pronunciation {
 
@@ -102,91 +171,74 @@ h1 {
 
     font-size: 2rem;
 
-    font-weight: 500;
-
-    letter-spacing: 0.02em;
-
-    opacity: 0.65;
-
-    margin-left: 15px;
-
-    white-space: nowrap;
+    opacity: 0.6;
 
 }
 
 
 
-/* Translation */
+.english {
 
-h2 {
-
-    text-align: center;
-
-    margin-top: 20px;
-
-    margin-bottom: 10px;
-
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 
     font-weight: 400;
 
 }
 
 
-.flag {
-
-    width: 24px;
-
-    height: auto;
-
-    vertical-align: middle;
-
-    margin-right: 8px;
-
-}
-
-
-
-/* Verb information */
 
 .verb-info {
 
-    text-align: center;
+    margin-top: 25px;
 
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 
     font-style: italic;
 
-    opacity: 0.6;
-
-    margin-bottom: 40px;
+    opacity: 0.55;
 
 }
 
 
 
-/* Sections */
 
-section {
 
-    margin-top: 40px;
+/* =========================
+   General sections
+========================= */
+
+
+section,
+.conjugation-section,
+.gerund-section,
+.examples-section,
+.vocabulary-section {
+
+    margin-bottom: 60px;
 
 }
 
 
-h3 {
+h2 {
 
-    font-size: 1.2rem;
+    text-align: center;
+
+    font-size: 1.3rem;
 
     font-weight: 500;
 
-    margin-bottom: 18px;
+    margin-bottom: 25px;
 
 }
 
 
 
-/* Tables */
+
+
+/* =========================
+   Conjugation table
+========================= */
+
 
 table {
 
@@ -194,65 +246,37 @@ table {
 
     border-collapse: collapse;
 
-    overflow: hidden;
+    font-size: 1rem;
 
 }
+
 
 
 thead {
 
+    opacity: 0.55;
+
     font-size: 0.85rem;
 
-    opacity: 0.65;
-
 }
+
 
 
 th {
 
     text-align: left;
 
-    padding: 12px;
+    padding: 12px 8px;
 
-    font-weight: 500;
+    font-weight: 400;
 
 }
+
 
 
 td {
 
-    padding: 12px;
-
-    border-top: 1px solid rgba(0,0,0,0.08);
-
-}
-
-
-tbody tr:hover {
-
-    background: rgba(0,156,59,0.06);
-
-}
-
-
-
-/* Gerund */
-
-#gerund {
-
-    font-style: italic;
-
-    font-size: 1.1rem;
-
-}
-
-
-
-/* Examples */
-
-.example-block {
-
-    padding: 20px 0;
+    padding: 12px 8px;
 
     border-bottom:
 
@@ -261,48 +285,126 @@ tbody tr:hover {
 }
 
 
+
+tbody tr:hover {
+
+    background:
+
+        rgba(0,156,59,0.06);
+
+}
+
+
+
+
+
+/* =========================
+   Gerund
+========================= */
+
+
+#gerund {
+
+    text-align: center;
+
+    font-size: 2rem;
+
+    font-style: italic;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+.small-note {
+
+    text-align: center;
+
+    font-size: 0.85rem;
+
+    opacity: 0.55;
+
+    font-style: italic;
+
+}
+
+
+
+
+
+/* =========================
+   Examples
+========================= */
+
+
+.example-block {
+
+    margin-bottom: 30px;
+
+}
+
+
+
 .example-pt {
 
-    font-size: 1.05rem;
+    font-size: 1.15rem;
 
-    line-height: 1.7;
-
-    font-weight: 500;
+    line-height: 1.6;
 
     margin-bottom: 8px;
 
 }
 
 
+
 .example-en {
 
-    font-size: 0.95rem;
+    font-size: 1rem;
 
-    line-height: 1.6;
+    opacity: 0.65;
 
-    opacity: 0.7;
+    line-height: 1.5;
 
 }
 
 
 
-/* Vocabulary */
+
+
+/* =========================
+   Vocabulary
+========================= */
+
+
+#vocabulary {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+
 
 .vocabulary-item {
 
-    display: inline-block;
+    padding: 10px 16px;
 
-    margin: 6px;
+    border-radius: 30px;
 
-    padding: 8px 14px;
+    background:
 
-    background: rgba(0,39,118,0.08);
-
-    border-radius: 20px;
+        rgba(0,39,118,0.08);
 
     font-size: 0.9rem;
 
 }
+
 
 
 .vocabulary-item .pt {
@@ -312,36 +414,39 @@ tbody tr:hover {
 }
 
 
-.vocabulary-item .en {
-
-    opacity: 0.65;
-
-}
 
 
 
-/* Mobile */
+/* =========================
+   Mobile
+========================= */
+
 
 @media (max-width: 700px) {
 
 
     body {
 
-        padding: 15px;
+        padding: 30px 15px;
 
     }
 
 
-    .card {
+    .example-main {
 
-        padding: 30px 20px;
-
-        border-radius: 18px;
+        margin-bottom: 45px;
 
     }
 
 
-    h1 {
+    #main-example-pt {
+
+        font-size: 1.5rem;
+
+    }
+
+
+    #verb {
 
         font-size: 3rem;
 
@@ -350,13 +455,7 @@ tbody tr:hover {
 
     #pronunciation {
 
-        display: block;
-
-        margin-left: 0;
-
-        margin-top: 8px;
-
-        font-size: 1.7rem;
+        font-size: 1.6rem;
 
     }
 
@@ -371,8 +470,9 @@ tbody tr:hover {
     th,
     td {
 
-        padding: 8px 5px;
+        padding: 8px 4px;
 
     }
+
 
 }
