@@ -386,15 +386,12 @@ tbody tr:hover {
     font-weight: 300;
 }
 
-/* Grammar Guide & Footer Styling */
+/* Grammar Guide & Footer Styling - Slimmad & Diskret */
 footer {
     width: 100%;
-    margin-top: 80px;
-    padding: 60px 25px 30px;
+    margin-top: 60px;
+    padding: 30px 25px;
     border-top: 1px solid var(--table-border);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    background: var(--glass-bg);
 }
 
 .footer-content {
@@ -402,58 +399,46 @@ footer {
     margin: 0 auto;
 }
 
-.grammar-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
-    gap: 30px;
-    margin-top: 40px;
+.grammar-inline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Tätt mellan raderna */
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-@media (min-width: 600px) {
-    .grammar-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.grammar-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 0.7rem; /* Liten och diskret text (ca 11px) */
+    line-height: 1.4;
 }
 
-.grammar-card {
-    padding: 20px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid var(--glass-border);
-    box-shadow: 0 4px 15px 0 var(--glass-shadow);
-}
-
-html.dark .grammar-card {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-.grammar-card h3 {
-    text-align: left;
-    margin-bottom: 12px;
-    font-size: 1.1rem;
+.grammar-title {
+    font-weight: 600;
     color: var(--text-pt);
+    min-width: 130px; /* Håller namnen på tempus snyggt justerade till vänster */
 }
 
-.grammar-card p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin: 0;
-    opacity: 0.85;
+.grammar-split {
+    opacity: 0.2;
+    font-weight: 300;
 }
 
-.grammar-card em {
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-weight: 500;
+.grammar-desc {
+    opacity: 0.6; /* Gör förklaringen mer dämpad */
 }
 
 .copyright {
     text-align: center;
-    margin-top: 60px;
-    font-size: 0.85rem;
-    opacity: 0.5;
+    margin-top: 40px;
+    font-size: 0.65rem;
+    opacity: 0.4;
     letter-spacing: 0.05em;
 }
+
 
 /* Mobilanpassning för Examples och Vocabulary */
 @media (max-width: 768px) {
