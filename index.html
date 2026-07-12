@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -20,41 +20,74 @@
 
 <body>
 
-<main class="hero">
 
-<div class="card">
-
-
-<h1>
-    <span id="verb"></span>
-    <span id="pronunciation"></span>
-</h1>
-
-<h2>
-    <img class="flag" src="https://flagcdn.com/gb.svg" alt="English">
-    <span id="translation"></span>
-</h2>
-
-<p class="verb-info">
-    <span id="type"></span>
-    ·
-    <span id="level"></span>
-</p>
+<main>
 
 
-<div class="meta">
+<!-- Example sentence -->
 
-<p id="type"></p>
+<div class="example-main">
 
-<p id="level"></p>
+<p id="main-example-pt"></p>
+
+<p id="main-example-en"></p>
 
 </div>
 
 
 
-<section>
+<!-- Verb information -->
 
-<h3>Conjugation</h3>
+<div class="verb-section">
+
+
+<div class="verb-title">
+
+
+<div class="language">
+
+<img src="/images/Brazil.svg">
+
+<span id="verb"></span>
+
+<span id="pronunciation"></span>
+
+</div>
+
+
+<div class="language english">
+
+<img src="/images/Great_Britain.svg">
+
+<span id="translation"></span>
+
+</div>
+
+
+</div>
+
+
+
+<p class="verb-info">
+
+<span id="type"></span>
+·
+<span id="level"></span>
+
+</p>
+
+
+</div>
+
+
+
+
+<!-- Conjugation -->
+
+<div class="conjugation-section">
+
+
+<h2>Conjugation</h2>
 
 
 <table>
@@ -62,11 +95,13 @@
 <thead>
 
 <tr>
+
 <th></th>
 <th>Present</th>
 <th>Perfect</th>
 <th>Imperfect</th>
 <th>Future</th>
+
 </tr>
 
 </thead>
@@ -80,40 +115,63 @@
 </table>
 
 
-</section>
+</div>
 
 
 
-<section>
 
-<h3>Gerund (action as a noun, e.g. runnING)</h3>
+
+<!-- Gerund -->
+
+<div class="gerund-section">
+
+
+<h2>Gerund</h2>
+
 
 <p id="gerund"></p>
 
-</section>
-
-
-
-<section>
-
-<h3>Example Sentences</h3>
-
-<div id="examples"></div>
-
-</section>
-
-
-
-<section>
-
-<h3>Vocabulary</h3>
-
-<div id="vocabulary"></div>
-
-</section>
+<p class="small-note">
+(action as a noun, e.g. running)
+</p>
 
 
 </div>
+
+
+
+
+
+<!-- More examples -->
+
+<div class="examples-section">
+
+
+<h2>Examples</h2>
+
+
+<div id="examples"></div>
+
+
+</div>
+
+
+
+
+
+<!-- Vocabulary -->
+
+<div class="vocabulary-section">
+
+
+<h2>Vocabulary</h2>
+
+
+<div id="vocabulary"></div>
+
+
+</div>
+
 
 
 </main>
