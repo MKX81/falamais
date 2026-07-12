@@ -94,14 +94,21 @@ main {
 
 #main-example-en {
 
-    font-size: 1.1rem;
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.35rem;
+
+    font-style: italic;
+
+    font-weight: 400;
 
     opacity: 0.65;
 
-    margin: 0;
+    margin: 10px 0 0;
+
+    letter-spacing: 0.02em;
 
 }
-
 
 
 
