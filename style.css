@@ -46,9 +46,7 @@ main {
 
 
 
-/* =========================
-   First example sentence
-========================= */
+/*First example sentence*/
 
 
 .example-main {
@@ -56,6 +54,14 @@ main {
     text-align: center;
 
     margin-bottom: 70px;
+
+    padding: 35px 40px;
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.35);
 
 }
 
