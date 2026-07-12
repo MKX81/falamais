@@ -10,7 +10,7 @@
     --glass-shadow: rgba(0, 0, 0, 0.03);
     --table-border: rgba(0, 0, 0, 0.05);
     --table-hover: rgba(47, 125, 74, 0.04); 
-    --vocab-bg: rgba(47, 125, 74, 0.08); 
+    --divider-color: rgba(0, 0, 0, 0.1);
 }
 
 html.dark {
@@ -25,7 +25,7 @@ html.dark {
     --glass-shadow: rgba(0, 0, 0, 0.2);
     --table-border: rgba(255, 255, 255, 0.05);
     --table-hover: rgba(82, 164, 110, 0.1);
-    --vocab-bg: rgba(82, 164, 110, 0.15);
+    --divider-color: rgba(255, 255, 255, 0.15);
 }
 
 * {
@@ -206,7 +206,7 @@ main {
 .conjugation-section,
 .practice-section {
     margin-bottom: 70px;
-    padding: 35px 40px;
+    padding: 40px 45px;
     border-radius: 16px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -217,10 +217,11 @@ main {
 
 h2 {
     text-align: center;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 table {
@@ -264,11 +265,12 @@ tbody tr:hover {
 .gerund-wrapper {
     text-align: center;
     border-top: 1px solid var(--table-border);
-    padding-top: 25px;
+    padding-top: 30px;
+    margin-top: 10px;
 }
 
 .gerund-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     margin: 0 0 15px 0;
 }
@@ -282,7 +284,7 @@ tbody tr:hover {
 }
 
 #gerund {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: italic;
     margin: 0;
     color: var(--text-verb);
@@ -290,8 +292,8 @@ tbody tr:hover {
 
 .vocabulary-wrapper {
     border-top: 1px solid var(--table-border);
-    margin-top: 35px;
-    padding-top: 35px;
+    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .example-block {
@@ -318,18 +320,29 @@ tbody tr:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px 30px;
 }
 
 .vocabulary-item {
-    padding: 10px 16px;
-    border-radius: 30px;
-    background: var(--vocab-bg);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .vocabulary-item .pt {
     font-weight: 500;
+}
+
+.vocabulary-item .en {
+    opacity: 0.65;
+}
+
+.vocab-split {
+    width: 1px;
+    height: 14px;
+    background: var(--divider-color);
+    display: inline-block;
 }
 
 @media (max-width: 700px) {
@@ -353,12 +366,17 @@ tbody tr:hover {
     .conjugation-section,
     .practice-section {
         margin-bottom: 45px;
-        padding: 25px 20px;
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
     }
 
     .vocabulary-wrapper {
-        margin-top: 25px;
-        padding-top: 25px;
+        margin-top: 30px;
+        padding-top: 30px;
     }
 
     #main-example-pt {
@@ -394,6 +412,13 @@ tbody tr:hover {
     }
 
     #gerund {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    #vocabulary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding-left: 10px;
     }
 }
