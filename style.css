@@ -1,30 +1,32 @@
 :root {
-    --bg-base: #faf9f5;
-    --gradient-1: rgba(59, 94, 64, 0.06);   
-    --gradient-2: rgba(212, 194, 159, 0.08); 
-    --gradient-3: rgba(74, 93, 78, 0.05);     
-    --text-main: #1f2933;
-    --text-verb: #2f7d4a; 
-    --glass-bg: rgba(255, 255, 255, 0.45);
-    --glass-border: rgba(255, 255, 255, 0.25);
-    --glass-shadow: rgba(0, 0, 0, 0.03);
-    --table-border: rgba(0, 0, 0, 0.05);
-    --table-hover: rgba(47, 125, 74, 0.04); 
-    --divider-color: rgba(0, 0, 0, 0.1);
+    --bg-base: #fdfdfa;
+    --gradient-1: rgba(34, 139, 34, 0.04);   
+    --gradient-2: rgba(218, 165, 32, 0.05);  
+    --gradient-3: rgba(30, 144, 255, 0.04);  
+    --text-main: #2b363a; 
+    --text-pt: #104e28;
+    --text-vocab-pt: #1b365d;
+    --glass-bg: rgba(255, 255, 255, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-shadow: rgba(27, 54, 93, 0.03);
+    --table-border: rgba(27, 54, 93, 0.06);
+    --table-hover: rgba(34, 139, 34, 0.04); 
+    --divider-color: rgba(27, 54, 93, 0.12);
 }
 
 html.dark {
-    --bg-base: #121613; 
-    --gradient-1: rgba(59, 94, 64, 0.15);
-    --gradient-2: rgba(30, 45, 35, 0.2);
-    --gradient-3: rgba(20, 30, 22, 0.2);
-    --text-main: #e2ede4; 
-    --text-verb: #52a46e; 
-    --glass-bg: rgba(25, 35, 28, 0.45);
+    --bg-base: #0f1412; 
+    --gradient-1: rgba(46, 139, 87, 0.12);
+    --gradient-2: rgba(184, 134, 11, 0.08);
+    --gradient-3: rgba(70, 130, 180, 0.1);
+    --text-main: #dae3e0; 
+    --text-pt: #62c384;
+    --text-vocab-pt: #7fb3d5;
+    --glass-bg: rgba(20, 28, 24, 0.55);
     --glass-border: rgba(255, 255, 255, 0.06);
     --glass-shadow: rgba(0, 0, 0, 0.2);
-    --table-border: rgba(255, 255, 255, 0.05);
-    --table-hover: rgba(82, 164, 110, 0.1);
+    --table-border: rgba(255, 255, 255, 0.07);
+    --table-hover: rgba(98, 195, 132, 0.08);
     --divider-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -77,6 +79,14 @@ body {
     transform: scale(0.95);
 }
 
+#theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--text-main);
+    fill: none;
+    transition: stroke 0.2s ease;
+}
+
 main {
     width: min(900px, 100%);
     margin: 0 auto;
@@ -102,7 +112,7 @@ main {
 }
 
 .highlight-verb {
-    color: var(--text-verb);
+    color: var(--text-pt);
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-weight: 600;
@@ -171,7 +181,7 @@ main {
     font-size: clamp(2.8rem, 7vw, 4.5rem);
     font-weight: 600;
     letter-spacing: 0.04em;
-    color: var(--text-verb);
+    color: var(--text-pt);
     text-shadow: 0 2px 10px var(--glass-shadow);
 }
 
@@ -217,11 +227,22 @@ main {
 
 h2 {
     text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
     margin-top: 0;
     margin-bottom: 35px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 table {
@@ -245,7 +266,7 @@ th {
 td {
     padding: 12px 8px;
     border-bottom: 1px solid var(--table-border);
-    color: var(--text-verb);
+    color: var(--text-pt);
 }
 
 td:first-child {
@@ -270,12 +291,15 @@ tbody tr:hover {
 }
 
 .gerund-title {
-    font-size: 1.1rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
     font-weight: 500;
+    font-style: italic;
     margin: 0 0 15px 0;
 }
 
 .gerund-explain {
+    font-family: "Inter", sans-serif;
     font-size: 0.85rem;
     opacity: 0.55;
     font-style: italic;
@@ -287,7 +311,7 @@ tbody tr:hover {
     font-size: 2rem;
     font-style: italic;
     margin: 0;
-    color: var(--text-verb);
+    color: var(--text-pt);
 }
 
 .vocabulary-wrapper {
@@ -331,11 +355,13 @@ tbody tr:hover {
 }
 
 .vocabulary-item .pt {
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--text-vocab-pt);
+    letter-spacing: 0.01em;
 }
 
 .vocabulary-item .en {
-    opacity: 0.65;
+    opacity: 0.7;
 }
 
 .vocab-split {
@@ -370,8 +396,13 @@ tbody tr:hover {
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
     }
 
     .vocabulary-wrapper {
