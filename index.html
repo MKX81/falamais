@@ -3,83 +3,119 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portuguese Verb of the Day</title>
+<title>Portuguese Verb of the Day</title>
 
-    <meta name="description"
-        content="Learn a new Brazilian Portuguese verb every day with conjugations, translations, and natural example sentences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-    <main class="hero">
+<main class="hero">
 
-        <div class="card">
-
-            <h1 id="verb">
-                Loading...
-            </h1>
-            <p id="pronunciation"></p>
-            <h2 id="translation"></h2>
+<div class="card">
 
 
-            <section>
-
-                <h3>Present</h3>
-
-                <table>
-                    <tbody id="present"></tbody>
-                </table>
-
-            </section>
+<h1 id="verb"></h1>
 
 
-            <section>
-
-                <h3>Pretérito Perfeito</h3>
-
-                <table>
-                    <tbody id="perfect"></tbody>
-                </table>
-
-            </section>
+<p id="pronunciation"></p>
 
 
-            <section>
-
-                <h3>Pretérito Imperfeito</h3>
-
-                <table>
-                    <tbody id="imperfect"></tbody>
-                </table>
-
-            </section>
+<h2>
+    <span class="flag">🇬🇧</span>
+    <span id="translation"></span>
+</h2>
 
 
-            <section class="example">
+<div class="meta">
 
-                <h3>Example Sentences</h3>
+<p id="type"></p>
 
-                <div id="examples"></div>
+<p id="level"></p>
 
-            </section>
+</div>
 
-        </div>
 
-    </main>
 
-    <script src="script.js"></script>
+<section>
+
+<h3>Conjugation</h3>
+
+
+<table>
+
+<thead>
+
+<tr>
+<th></th>
+<th>Present</th>
+<th>Perfect</th>
+<th>Imperfect</th>
+<th>Future</th>
+</tr>
+
+</thead>
+
+
+<tbody id="conjugation">
+
+</tbody>
+
+
+</table>
+
+
+</section>
+
+
+
+<section>
+
+<h3>Gerund</h3>
+
+<p id="gerund"></p>
+
+</section>
+
+
+
+<section>
+
+<h3>Example Sentences</h3>
+
+<div id="examples"></div>
+
+</section>
+
+
+
+<section>
+
+<h3>Vocabulary</h3>
+
+<div id="vocabulary"></div>
+
+</section>
+
+
+</div>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
 
 </body>
 
