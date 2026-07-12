@@ -91,12 +91,11 @@ function renderVerb(verb) {
         item.className = "vocabulary-item";
         item.innerHTML = `
             <span class="pt">${word.pt}</span>
-            <span class="vocab-split"></span>
+            <span class="vocab-text-split">|</span>
             <span class="en">${word.en}</span>
         `;
         vocabulary.appendChild(item);
     });
-}
 
 function highlightVerb(sentence, verb) {
     const regex = new RegExp("\\b" + verb + "\\b", "i");
