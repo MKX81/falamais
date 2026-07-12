@@ -1,183 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Your daily dose of Brazilian Portuguese </title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
+<title>Your daily dose of Brazilian Portuguese</title>
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
 </head>
-
-
 <body>
-
 
 <main>
 
-
 <!-- Example sentence -->
-
 <div class="example-main">
-
 <p id="main-example-pt"></p>
-
 <p id="main-example-en"></p>
-
 </div>
-
-
 
 <!-- Verb information -->
-
 <div class="verb-section">
-
-
 <div class="verb-title">
-
-
 <div class="language">
-
 <img src="images/Brazil.svg">
-
 <span id="verb"></span>
-
 <span id="pronunciation"></span>
-
 </div>
-
-
 <div class="language english">
-
 <img src="images/Great_Britain.svg">
-
 <span id="translation"></span>
-
 </div>
-
-
 </div>
-
-
-
 <p class="verb-info">
-
 <span id="type"></span>
-
 </p>
-
-
 </div>
 
-
-
-
-<!-- Conjugation -->
-
+<!-- Conjugation & Gerundium Block -->
 <div class="conjugation-section">
-
-
 <h2>Conjugation</h2>
 
-
 <table>
-
 <thead>
-
 <tr>
-
 <th></th>
 <th>Present</th>
 <th>Perfect</th>
 <th>Imperfect</th>
 <th>Future</th>
-
 </tr>
-
 </thead>
-
-
 <tbody id="conjugation">
-
 </tbody>
-
-
 </table>
 
-
-</div>
-
-
-
-
-
-<!-- Gerund -->
-
-<div class="gerund-section">
-
-
-<h2>Gerund</h2>
-<p class="small-note">
-(action as a noun, e.g. running)
-</p>
-
+<!-- Gerundium flyttad hit inuti blocket -->
+<div class="gerund-wrapper">
+<h3 class="gerund-title">Gerundium <span class="gerund-explain">(action as a noun, e.g. running)</span></h3>
 <p id="gerund"></p>
-
-
-
-
 </div>
 
-
-
-
+</div>
 
 <!-- More examples -->
-
 <div class="examples-section">
-
-
 <h2>Examples</h2>
-
-
 <div id="examples"></div>
-
-
 </div>
-
-
-
-
 
 <!-- Vocabulary -->
-
 <div class="vocabulary-section">
-
-
 <h2>Vocabulary</h2>
-
-
 <div id="vocabulary"></div>
-
-
 </div>
-
-
 
 </main>
 
-
 <script src="script.js"></script>
-
-
 </body>
-
 </html>
