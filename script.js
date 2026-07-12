@@ -175,11 +175,8 @@ fetch("verbs.json")
             block.innerHTML = `
 
                 <p class="example-pt">
-                    ${highlightVerb(
-                        example.pt,
-                        verb.present.eu
-                    )}
-                </p>
+    ${example.pt}
+</p>
 
                 <p class="example-en">
                     ${example.en}
