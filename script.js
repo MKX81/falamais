@@ -56,7 +56,7 @@ fetch("verbs.json")
             item.className = "vocabulary-item";
             item.innerHTML = `
                 <span class="pt">${word.pt}</span>
-                =
+                <span class="vocab-split"></span>
                 <span class="en">${word.en}</span>
             `;
             vocabulary.appendChild(item);
