@@ -2,11 +2,24 @@
     box-sizing: border-box;
 }
 
+
 body {
 
     margin: 0;
 
     min-height: 100vh;
+
+    font-family: "Inter", sans-serif;
+
+    color: #1f2933;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 156, 59, 0.85),
+            rgba(255, 223, 0, 0.55),
+            rgba(0, 39, 118, 0.85)
+        );
 
     display: flex;
 
@@ -16,69 +29,160 @@ body {
 
     padding: 40px;
 
-    font-family: Inter, sans-serif;
+}
 
-    color: white;
 
-    background:
-    radial-gradient(circle at top left,
-    rgba(0,156,59,.65),
-    transparent 40%),
 
-    radial-gradient(circle at bottom right,
-    rgba(255,223,0,.45),
-    transparent 45%),
+/* Main area */
 
-    linear-gradient(
-    135deg,
-    #042f2e,
-    #065f46,
-    #0f766e,
-    #1e3a8a);
+.hero {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 
 }
+
+
+
+/* Main card */
 
 .card {
 
-    width: min(900px, 95vw);
+    width: min(900px, 100%);
 
-    background: rgba(255,255,255,.08);
+    background: rgba(255,255,255,0.88);
 
-    backdrop-filter: blur(20px);
-
-    border: 1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(12px);
 
     border-radius: 24px;
 
-    padding: 40px;
+    padding: 50px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.15);
 
 }
+
+
+
+/* Verb heading */
 
 h1 {
 
     margin: 0;
 
-    font-size: clamp(3rem, 6vw, 5rem);
+    text-align: center;
 
-    font-weight: 700;
+    font-size: clamp(3rem, 8vw, 5rem);
+
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    color: #123;
 
 }
+
+
+
+/* Pronunciation */
+
+#pronunciation {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-style: italic;
+
+    font-size: 2rem;
+
+    font-weight: 500;
+
+    letter-spacing: 0.02em;
+
+    opacity: 0.65;
+
+    margin-left: 15px;
+
+    white-space: nowrap;
+
+}
+
+
+
+/* Translation */
 
 h2 {
 
-    margin-top: 8px;
+    text-align: center;
+
+    margin-top: 20px;
+
+    margin-bottom: 10px;
+
+    font-size: 1.5rem;
 
     font-weight: 400;
 
-    opacity: .85;
+}
+
+
+.flag {
+
+    font-size: 1.3rem;
+
+    margin-right: 8px;
 
 }
+
+
+
+/* Verb information */
+
+.verb-info {
+
+    text-align: center;
+
+    font-size: 0.95rem;
+
+    font-style: italic;
+
+    opacity: 0.6;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+/* Sections */
+
+section {
+
+    margin-top: 40px;
+
+}
+
 
 h3 {
 
-    margin-top: 32px;
+    font-size: 1.2rem;
+
+    font-weight: 500;
+
+    margin-bottom: 18px;
 
 }
+
+
+
+/* Tables */
 
 table {
 
@@ -86,32 +190,185 @@ table {
 
     border-collapse: collapse;
 
-}
-
-td {
-
-    padding: 8px 0;
-
-    border-bottom: 1px solid rgba(255,255,255,.1);
+    overflow: hidden;
 
 }
 
-.example {
 
-    margin-top: 30px;
+thead {
+
+    font-size: 0.85rem;
+
+    opacity: 0.65;
 
 }
 
-#example-pt {
 
-    font-size: 1.1rem;
+th {
+
+    text-align: left;
+
+    padding: 12px;
 
     font-weight: 500;
 
 }
 
-#example-en {
 
-    opacity: .8;
+td {
+
+    padding: 12px;
+
+    border-top: 1px solid rgba(0,0,0,0.08);
+
+}
+
+
+tbody tr:hover {
+
+    background: rgba(0,156,59,0.06);
+
+}
+
+
+
+/* Gerund */
+
+#gerund {
+
+    font-style: italic;
+
+    font-size: 1.1rem;
+
+}
+
+
+
+/* Examples */
+
+.example-block {
+
+    padding: 20px 0;
+
+    border-bottom:
+
+        1px solid rgba(0,0,0,0.08);
+
+}
+
+
+.example-pt {
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+
+}
+
+
+.example-en {
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+
+    opacity: 0.7;
+
+}
+
+
+
+/* Vocabulary */
+
+.vocabulary-item {
+
+    display: inline-block;
+
+    margin: 6px;
+
+    padding: 8px 14px;
+
+    background: rgba(0,39,118,0.08);
+
+    border-radius: 20px;
+
+    font-size: 0.9rem;
+
+}
+
+
+.vocabulary-item .pt {
+
+    font-weight: 500;
+
+}
+
+
+.vocabulary-item .en {
+
+    opacity: 0.65;
+
+}
+
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+
+    body {
+
+        padding: 15px;
+
+    }
+
+
+    .card {
+
+        padding: 30px 20px;
+
+        border-radius: 18px;
+
+    }
+
+
+    h1 {
+
+        font-size: 3rem;
+
+    }
+
+
+    #pronunciation {
+
+        display: block;
+
+        margin-left: 0;
+
+        margin-top: 8px;
+
+        font-size: 1.7rem;
+
+    }
+
+
+    table {
+
+        font-size: 0.85rem;
+
+    }
+
+
+    th,
+    td {
+
+        padding: 8px 5px;
+
+    }
 
 }
