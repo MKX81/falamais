@@ -1,85 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your daily dose of Brazilian Portuguese</title>
-<link rel="preconnect" href="https://googleapis.com">
-<link rel="preconnect" href="https://gstatic.com" crossorigin>
-<link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your daily dose of Brazilian Portuguese</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<button id="theme-toggle" aria-label="Toggle theme"></button>
+    <!-- Knapparna för tema och slumpning i övre högra hörnet -->
+    <button id="shuffle-btn" aria-label="Randomize verb"></button>
+    <button id="theme-toggle" aria-label="Toggle theme"></button>
 
-<main>
+    <main>
 
-<!-- Example sentence -->
-<div class="example-main">
-<p id="main-example-pt"></p>
-<p id="main-example-en"></p>
-</div>
+        <!-- Example sentence -->
+        <div class="example-main">
+            <p id="main-example-pt"></p>
+            <p id="main-example-en"></p>
+        </div>
 
-<!-- Verb information -->
-<div class="verb-section">
-<div class="verb-title">
-<div class="language">
-<img src="images/Brazil.svg">
-<span id="verb"></span>
-<span id="pronunciation"></span>
-</div>
-<div class="language english">
-<img src="images/Great_Britain.svg">
-<span id="translation"></span>
-</div>
-</div>
-<p class="verb-info">
-<span id="type"></span>
-</p>
-</div>
+        <!-- Verb information -->
+        <div class="verb-section">
+            <div class="verb-title">
+                <div class="language">
+                    <img src="images/Brazil.svg" alt="Brazil Flag">
+                    <span id="verb"></span>
+                    <span id="pronunciation"></span>
+                </div>
+                <div class="language english">
+                    <img src="images/Great_Britain.svg" alt="UK Flag">
+                    <span id="translation"></span>
+                </div>
+            </div>
+            <p class="verb-info">
+                <span id="type"></span>
+            </p>
+        </div>
 
-<!-- Conjugation & Gerundium Block -->
-<div class="conjugation-section">
-<h2>Conjugation</h2>
+        <!-- Conjugation & Gerundium Block -->
+        <div class="conjugation-section">
+            <h2>Conjugation</h2>
 
-<table>
-<thead>
-<tr>
-<th>Pronoun</th>
-<th>Present</th>
-<th>Perfect</th>
-<th>Imperfect</th>
-<th>Future</th>
-</tr>
-</thead>
-<tbody id="conjugation">
-</tbody>
-</table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Present</th>
+                        <th>Perfect</th>
+                        <th>Imperfect</th>
+                        <th>Future</th>
+                    </tr>
+                </thead>
+                <tbody id="conjugation">
+                </tbody>
+            </table>
 
-<!-- Gerundium -->
-<div class="gerund-wrapper">
-<h3 class="gerund-title">Gerundium <span class="gerund-explain">(action as a noun, e.g. running)</span></h3>
-<p id="gerund"></p>
-</div>
+            <!-- Gerundium -->
+            <div class="gerund-wrapper">
+                <h3 class="gerund-title">Gerundium <span class="gerund-explain">(action as a noun, e.g. running)</span></h3>
+                <p id="gerund"></p>
+            </div>
+        </div>
 
-</div>
+        <!-- Examples & Vocabulary Block -->
+        <div class="practice-section">
+            <div class="inner-section">
+                <h2>Examples</h2>
+                <div id="examples"></div>
+            </div>
 
-<!-- Examples & Vocabulary Block -->
-<div class="practice-section">
-<div class="inner-section">
-<h2>Examples</h2>
-<div id="examples"></div>
-</div>
+            <div class="inner-section vocabulary-wrapper">
+                <h3>Vocabulary</h3>
+                <div id="vocabulary"></div>
+            </div>
+        </div>
 
-<div class="inner-section vocabulary-wrapper">
-<h3>Vocabulary</h3>
-<div id="vocabulary"></div>
-</div>
-</div>
+    </main>
 
-</main>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
