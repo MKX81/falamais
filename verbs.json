@@ -1,7 +1,18 @@
 [
   {
     "infinitive": "falar",
-    "english": "speak",
+    "pronunciation": "fa-LAR",
+    "english": "speak / talk",
+
+    "type": "regular -ar verb",
+
+    "learning": {
+      "frequency_rank": 25,
+      "difficulty": 1,
+      "importance": 4,
+      "learning_priority": 30,
+      "level": "A1"
+    },
 
     "present": {
       "eu": "falo",
@@ -27,62 +38,71 @@
       "eles/elas": "falavam"
     },
 
+    "future": {
+      "eu": "falarei",
+      "você": "falará",
+      "ele/ela": "falará",
+      "nós": "falaremos",
+      "eles/elas": "falarão"
+    },
+
+    "gerund": "falando",
+
     "examples": [
       {
         "pt": "Eu falo português com alguns amigos brasileiros muito simpáticos durante longas conversas online.",
         "en": "I speak Portuguese with some very friendly Brazilian friends during long online conversations."
       },
       {
-        "pt": "Ela fala sobre projetos importantes em uma empresa internacional bastante conhecida.",
-        "en": "She talks about important projects in a well-known international company."
+        "pt": "Ela falou sobre um projeto importante durante uma reunião bastante interessante no trabalho.",
+        "en": "She talked about an important project during a very interesting meeting at work."
       },
       {
-        "pt": "Nós falamos frequentemente sobre livros interessantes e ideias criativas.",
-        "en": "We often talk about interesting books and creative ideas."
+        "pt": "Nós falaremos sobre novas ideias criativas depois do jantar tranquilo em família.",
+        "en": "We will talk about new creative ideas after the quiet family dinner."
       }
-    ]
-  },
+    ],
 
-  {
-    "infinitive": "ser",
-    "english": "be",
-
-    "present": {
-      "eu": "sou",
-      "você": "é",
-      "ele/ela": "é",
-      "nós": "somos",
-      "eles/elas": "são"
-    },
-
-    "perfect": {
-      "eu": "fui",
-      "você": "foi",
-      "ele/ela": "foi",
-      "nós": "fomos",
-      "eles/elas": "foram"
-    },
-
-    "imperfect": {
-      "eu": "era",
-      "você": "era",
-      "ele/ela": "era",
-      "nós": "éramos",
-      "eles/elas": "eram"
-    },
-
-    "examples": [
+    "vocabulary": [
       {
-        "pt": "Aquela cidade antiga é extremamente bonita durante as noites tranquilas de verão.",
-        "en": "That old city is extremely beautiful during quiet summer nights."
+        "pt": "amigo",
+        "en": "friend",
+        "type": "noun"
       },
       {
-        "pt": "O novo restaurante é famoso por seus pratos tradicionais e saborosos.",
-        "en": "The new restaurant is famous for its traditional and delicious dishes."
+        "pt": "brasileiro",
+        "en": "Brazilian",
+        "type": "adjective"
       },
       {
-        "pt": "Nós somos muito gratos pelas oportunidades valiosas que recebemos.",
-        "en": "We are very grateful for the valuable opportunities we have received."
+        "pt": "simpático",
+        "en": "friendly / nice",
+        "type": "adjective"
+      },
+      {
+        "pt": "conversa",
+        "en": "conversation",
+        "type": "noun"
+      },
+      {
+        "pt": "projeto",
+        "en": "project",
+        "type": "noun"
+      },
+      {
+        "pt": "importante",
+        "en": "important",
+        "type": "adjective"
+      },
+      {
+        "pt": "reunião",
+        "en": "meeting",
+        "type": "noun"
+      },
+      {
+        "pt": "criativo",
+        "en": "creative",
+        "type": "adjective"
       }
     ]
   }
