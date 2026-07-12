@@ -235,6 +235,242 @@
       }
     ]
   }
+,
+  {
+    "infinitive": "ter",
+    "pronunciation": "TEHR",
+    "english": "have",
+    "type": "irregular -er verb",
+    "learning": {
+      "frequency_rank": 4,
+      "difficulty": 3,
+      "importance": 5,
+      "learning_priority": 48,
+      "level": "A1"
+    },
+    "present": {
+      "eu": "tenho",
+      "você": "tem",
+      "ele/ela": "tem",
+      "nós": "temos",
+      "eles/elas": "têm"
+    },
+    "perfect": {
+      "eu": "tive",
+      "você": "teve",
+      "ele/ela": "teve",
+      "nós": "tivemos",
+      "eles/elas": "tiveram"
+    },
+    "imperfect": {
+      "eu": "tinha",
+      "você": "tinha",
+      "ele/ela": "tinha",
+      "nós": "tínhamos",
+      "eles/elas": "tinham"
+    },
+    "future": {
+      "eu": "terei",
+      "você": "terá",
+      "ele/ela": "terá",
+      "nós": "teremos",
+      "eles/elas": "terão"
+    },
+    "gerund": "tendo",
+    "examples": [
+      {
+        "pt": "Eu tenho uma ideia maravilhosa para o nosso novo projeto de tecnologia.",
+        "en": "I have a wonderful idea for our new technology project."
+      },
+      {
+        "pt": "Eles tiveram muitas dúvidas difíceis durante a prova na faculdade ontem.",
+        "en": "They had many difficult doubts during the exam at college yesterday."
+      },
+      {
+        "pt": "Nós teremos uma reunião importante com os clientes na próxima segunda-feira.",
+        "en": "We will have an important meeting with the clients next Monday."
+      }
+    ],
+    "vocabulary": [
+      {
+        "pt": "ideia",
+        "en": "idea",
+        "type": "noun"
+      },
+      {
+        "pt": "prova",
+        "en": "exam / test",
+        "type": "noun"
+      },
+      {
+        "pt": "faculdade",
+        "en": "college / university",
+        "type": "noun"
+      },
+      {
+        "pt": "reunião",
+        "en": "meeting",
+        "type": "noun"
+      }
+    ]
+  },
+  {
+    "infinitive": "fazer",
+    "pronunciation": "fa-ZEHR",
+    "english": "do / make",
+    "type": "irregular -er verb",
+    "learning": {
+      "frequency_rank": 6,
+      "difficulty": 3,
+      "importance": 5,
+      "learning_priority": 47,
+      "level": "A1"
+    },
+    "present": {
+      "eu": "faço",
+      "você": "faz",
+      "ele/ela": "faz",
+      "nós": "fazemos",
+      "eles/elas": "fazem"
+    },
+    "perfect": {
+      "eu": "fiz",
+      "você": "fez",
+      "ele/ela": "fez",
+      "nós": "fizemos",
+      "eles/elas": "fizeram"
+    },
+    "imperfect": {
+      "eu": "fazia",
+      "você": "fazia",
+      "ele/ela": "fazia",
+      "nós": "fazíamos",
+      "eles/elas": "faziam"
+    },
+    "future": {
+      "eu": "farei",
+      "você": "fará",
+      "ele/ela": "fará",
+      "nós": "faremos",
+      "eles/elas": "farão"
+    },
+    "gerund": "fazendo",
+    "examples": [
+      {
+        "pt": "Eu faço exercícios físicos na academia do bairro quase todos os dias.",
+        "en": "I do physical exercises at the neighborhood gym almost every day."
+      },
+      {
+        "pt": "Você fez um trabalho excelente na apresentação da semana passada.",
+        "en": "You did an excellent job on last week's presentation."
+      },
+      {
+        "pt": "Eles farão um bolo de chocolate delicioso para a festa de aniversário.",
+        "en": "They will make a delicious chocolate cake for the birthday party."
+      }
+    ],
+    "vocabulary": [
+      {
+        "pt": "academia",
+        "en": "gym",
+        "type": "noun"
+      },
+      {
+        "pt": "bairro",
+        "en": "neighborhood",
+        "type": "noun"
+      },
+      {
+        "pt": "apresentação",
+        "en": "presentation",
+        "type": "noun"
+      },
+      {
+        "pt": "aniversário",
+        "en": "birthday",
+        "type": "noun"
+      }
+    ]
+  },
+  {
+    "infinitive": "trabalhar",
+    "pronunciation": "tra-ba-LHAR",
+    "english": "work",
+    "type": "regular -ar verb",
+    "learning": {
+      "frequency_rank": 42,
+      "difficulty": 1,
+      "importance": 5,
+      "learning_priority": 25,
+      "level": "A1"
+    },
+    "present": {
+      "eu": "trabalho",
+      "você": "trabalha",
+      "ele/ela": "trabalha",
+      "nós": "trabalhamos",
+      "eles/elas": "trabalham"
+    },
+    "perfect": {
+      "eu": "trabalhei",
+      "você": "trabalhou",
+      "ele/ela": "trabalhou",
+      "nós": "trabalhamos",
+      "eles/elas": "trabalharam"
+    },
+    "imperfect": {
+      "eu": "trabalhava",
+      "você": "trabalhava",
+      "ele/ela": "trabalhava",
+      "nós": "trabalhávamos",
+      "eles/elas": "trabalhavam"
+    },
+    "future": {
+      "eu": "trabalharei",
+      "você": "trabalhará",
+      "ele/ela": "trabalhará",
+      "nós": "trabalharemos",
+      "eles/elas": "trabalharão"
+    },
+    "gerund": "trabalhando",
+    "examples": [
+      {
+        "pt": "Eu trabalho em uma empresa estrangeira focada em inovação tecnológica.",
+        "en": "I work at a foreign company focused on technological innovation."
+      },
+      {
+        "pt": "Ela trabalhou até tarde ontem à noite para finalizar o relatório financeiro.",
+        "en": "She worked until late last night to finish the financial report."
+      },
+      {
+        "pt": "Nós trabalharemos juntos em um escritório moderno no centro de São Paulo.",
+        "en": "We will work together in a modern office in downtown São Paulo."
+      }
+    ],
+    "vocabulary": [
+      {
+        "pt": "empresa",
+        "en": "company / enterprise",
+        "type": "noun"
+      },
+      {
+        "pt": "estrangeira",
+        "en": "foreign",
+        "type": "adjective"
+      },
+      {
+        "pt": "relatório",
+        "en": "report",
+        "type": "noun"
+      },
+      {
+        "pt": "escritório",
+        "en": "office",
+        "type": "noun"
+      }
+    ]
+  }
 ]
+
 
 
