@@ -364,18 +364,19 @@ tbody tr:hover {
     align-items: center;
     justify-content: flex-start;
     gap: 8px; /* Avståndet mellan orden och strecket */
-    padding: 10px 0;
-    border-bottom: 1px solid var(--table-border);
+    padding: 6px 0; /* Lite mindre luft eftersom linjerna är borta */
+    border-bottom: none; /* TA BORT DENNA LINJE: Tar bort strecket mellan raderna */
 }
 
 .vocabulary-item:last-child {
     border-bottom: none;
 }
 
-.vocab-text-split {
-    opacity: 0.3; /* Gör strecket lite mer diskret så det inte sticker ut för mycket */
-    font-weight: 300;
+.vocabulary-item .pt {
+    font-weight: 600; /* GÖR DETTA FETARE: Ändrat från 500 till 600 för pt-br */
+    color: var(--text-vocab-pt);
 }
+
 
 
 /* Mobilanpassning för mindre skärmar */
