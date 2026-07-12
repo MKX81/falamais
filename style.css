@@ -79,7 +79,7 @@ body {
 }
 
 #shuffle-btn {
-    right: 74px; /* Placeras till vänster om tema-knappen */
+    right: 74px;
 }
 
 #theme-toggle:active,
@@ -234,7 +234,6 @@ main {
     box-shadow: 0 8px 32px 0 var(--glass-shadow);
 }
 
-/* Flexbox för Examples och Vocabulary sida vid sida */
 .practice-section {
     display: flex;
     gap: 40px;
@@ -359,13 +358,14 @@ tbody tr:hover {
     margin: 0;
 }
 
+/* Centrerar glosraderna direkt under Vocabulary-rubriken */
 .vocabulary-item {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 8px; /* Avståndet mellan orden och strecket */
-    padding: 6px 0; /* Lite mindre luft eftersom linjerna är borta */
-    border-bottom: none; /* TA BORT DENNA LINJE: Tar bort strecket mellan raderna */
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: none;
 }
 
 .vocabulary-item:last-child {
@@ -373,13 +373,89 @@ tbody tr:hover {
 }
 
 .vocabulary-item .pt {
-    font-weight: 600; /* GÖR DETTA FETARE: Ändrat från 500 till 600 för pt-br */
+    font-weight: 600;
     color: var(--text-vocab-pt);
 }
 
+.vocabulary-item .en {
+    opacity: 0.7;
+}
 
+.vocab-text-split {
+    opacity: 0.3;
+    font-weight: 300;
+}
 
-/* Mobilanpassning för mindre skärmar */
+/* Grammar Guide & Footer Styling */
+footer {
+    width: 100%;
+    margin-top: 80px;
+    padding: 60px 25px 30px;
+    border-top: 1px solid var(--table-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: var(--glass-bg);
+}
+
+.footer-content {
+    width: min(900px, 100%);
+    margin: 0 auto;
+}
+
+.grammar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media (min-width: 600px) {
+    .grammar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.grammar-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 15px 0 var(--glass-shadow);
+}
+
+html.dark .grammar-card {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.grammar-card h3 {
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: var(--text-pt);
+}
+
+.grammar-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.85;
+}
+
+.grammar-card em {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.85rem;
+    opacity: 0.5;
+    letter-spacing: 0.05em;
+}
+
+/* Mobilanpassning för Examples och Vocabulary */
 @media (max-width: 768px) {
     .practice-section {
         flex-direction: column;
