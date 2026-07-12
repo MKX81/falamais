@@ -9,7 +9,7 @@
     --glass-border: rgba(255, 255, 255, 0.25);
     --glass-shadow: rgba(0, 0, 0, 0.03);
     --table-border: rgba(0, 0, 0, 0.05);
-    --table-hover: rgba(47, 125, 74, 0.06); 
+    --table-hover: rgba(47, 125, 74, 0.04); 
     --vocab-bg: rgba(47, 125, 74, 0.08); 
 }
 
@@ -25,7 +25,7 @@
         --glass-border: rgba(255, 255, 255, 0.06);
         --glass-shadow: rgba(0, 0, 0, 0.2);
         --table-border: rgba(255, 255, 255, 0.05);
-        --table-hover: rgba(82, 164, 110, 0.15);
+        --table-hover: rgba(82, 164, 110, 0.1);
         --vocab-bg: rgba(82, 164, 110, 0.15);
     }
 }
@@ -59,27 +59,23 @@ main {
     margin: 0 auto;
 }
 
-.example-main,
-.conjugation-section {
-    margin-bottom: 70px;
-    padding: 35px 40px;
-    border-radius: 16px;
+.example-main {
+    text-align: center;
+    margin-bottom: 45px;
+    padding: 20px 30px;
+    border-radius: 12px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
-    box-shadow: 0 8px 32px 0 var(--glass-shadow);
-}
-
-.example-main {
-    text-align: center;
+    box-shadow: 0 4px 20px 0 var(--glass-shadow);
 }
 
 #main-example-pt {
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
     line-height: 1.4;
     font-weight: 400;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
 }
 
 .highlight-verb {
@@ -91,11 +87,11 @@ main {
 
 #main-example-en {
     font-family: "Cormorant Garamond", serif;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-style: italic;
     font-weight: 400;
     opacity: 0.65;
-    margin: 10px 0 0;
+    margin: 5px 0 0;
     letter-spacing: 0.02em;
 }
 
@@ -150,6 +146,17 @@ main {
     opacity: 0.55;
 }
 
+.conjugation-section {
+    margin-bottom: 70px;
+    padding: 35px 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 var(--glass-shadow);
+}
+
 section,
 .examples-section,
 .vocabulary-section {
@@ -185,6 +192,13 @@ th {
 td {
     padding: 12px 8px;
     border-bottom: 1px solid var(--table-border);
+    color: var(--text-verb);
+}
+
+td:first-child {
+    font-weight: 500;
+    color: var(--text-main);
+    opacity: 0.85;
 }
 
 tbody tr:last-child td {
@@ -261,14 +275,18 @@ tbody tr:hover {
         padding: 30px 15px;
     }
 
-    .example-main,
+    .example-main {
+        margin-bottom: 35px;
+        padding: 15px 20px;
+    }
+
     .conjugation-section {
         margin-bottom: 45px;
         padding: 25px 20px;
     }
 
     #main-example-pt {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
     }
 
     #verb {
