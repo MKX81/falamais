@@ -71,8 +71,7 @@ fetch("verbs.json")
             verb.type;
 
 
-        document.getElementById("level").textContent =
-            verb.learning.level;
+
 
 
 
