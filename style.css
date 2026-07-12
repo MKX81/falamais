@@ -8,7 +8,7 @@
     --glass-bg: rgba(255, 255, 255, 0.45);
     --glass-border: rgba(255, 255, 255, 0.25);
     --glass-shadow: rgba(0, 0, 0, 0.03);
-    --table-border: rgba(0, 0, 0, 0.08);
+    --table-border: rgba(0, 0, 0, 0.05);
     --table-hover: rgba(47, 125, 74, 0.06); 
     --vocab-bg: rgba(47, 125, 74, 0.08); 
 }
@@ -24,7 +24,7 @@
         --glass-bg: rgba(25, 35, 28, 0.45);
         --glass-border: rgba(255, 255, 255, 0.06);
         --glass-shadow: rgba(0, 0, 0, 0.2);
-        --table-border: rgba(255, 255, 255, 0.08);
+        --table-border: rgba(255, 255, 255, 0.05);
         --table-hover: rgba(82, 164, 110, 0.15);
         --vocab-bg: rgba(82, 164, 110, 0.15);
     }
@@ -59,8 +59,8 @@ main {
     margin: 0 auto;
 }
 
-.example-main {
-    text-align: center;
+.example-main,
+.conjugation-section {
     margin-bottom: 70px;
     padding: 35px 40px;
     border-radius: 16px;
@@ -69,6 +69,10 @@ main {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     box-shadow: 0 8px 32px 0 var(--glass-shadow);
+}
+
+.example-main {
+    text-align: center;
 }
 
 #main-example-pt {
@@ -147,8 +151,6 @@ main {
 }
 
 section,
-.conjugation-section,
-.gerund-section,
 .examples-section,
 .vocabulary-section {
     margin-bottom: 60px;
@@ -158,6 +160,7 @@ h2 {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 500;
+    margin-top: 0;
     margin-bottom: 25px;
 }
 
@@ -165,6 +168,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-size: 1rem;
+    margin-bottom: 35px;
 }
 
 thead {
@@ -183,22 +187,39 @@ td {
     border-bottom: 1px solid var(--table-border);
 }
 
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
 tbody tr:hover {
     background: var(--table-hover);
 }
 
-#gerund {
+.gerund-wrapper {
     text-align: center;
-    font-size: 2rem;
-    font-style: italic;
-    margin-bottom: 5px;
+    border-top: 1px solid var(--table-border);
+    padding-top: 25px;
 }
 
-.small-note {
-    text-align: center;
+.gerund-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.gerund-explain {
     font-size: 0.85rem;
     opacity: 0.55;
     font-style: italic;
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+#gerund {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin: 0;
+    color: var(--text-verb);
 }
 
 .example-block {
@@ -240,8 +261,10 @@ tbody tr:hover {
         padding: 30px 15px;
     }
 
-    .example-main {
+    .example-main,
+    .conjugation-section {
         margin-bottom: 45px;
+        padding: 25px 20px;
     }
 
     #main-example-pt {
@@ -258,10 +281,25 @@ tbody tr:hover {
 
     table {
         font-size: 0.85rem;
+        margin-bottom: 25px;
     }
 
     th,
     td {
         padding: 8px 4px;
+    }
+
+    .gerund-title {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .gerund-explain {
+        margin-left: 0;
+    }
+
+    #gerund {
+        font-size: 1.5rem;
     }
 }
