@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px;
+
+    font-family: Inter, sans-serif;
+
+    color: white;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(0,156,59,.65),
+    transparent 40%),
+
+    radial-gradient(circle at bottom right,
+    rgba(255,223,0,.45),
+    transparent 45%),
+
+    linear-gradient(
+    135deg,
+    #042f2e,
+    #065f46,
+    #0f766e,
+    #1e3a8a);
+
+}
+
+.card {
+
+    width: min(900px, 95vw);
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+}
+
+h1 {
+
+    margin: 0;
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    font-weight: 700;
+
+}
+
+h2 {
+
+    margin-top: 8px;
+
+    font-weight: 400;
+
+    opacity: .85;
+
+}
+
+h3 {
+
+    margin-top: 32px;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+td {
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
+
+}
+
+.example {
+
+    margin-top: 30px;
+
+}
+
+#example-pt {
+
+    font-size: 1.1rem;
+
+    font-weight: 500;
+
+}
+
+#example-en {
+
+    opacity: .8;
+
+}
