@@ -135,7 +135,11 @@ h2 {
 
 .flag {
 
-    font-size: 1.3rem;
+    width: 24px;
+
+    height: auto;
+
+    vertical-align: middle;
 
     margin-right: 8px;
 
