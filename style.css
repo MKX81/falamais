@@ -57,7 +57,7 @@ body {
 
     width: min(900px, 100%);
 
-    background: rgba(255,255,255,0.88);
+    background: rgba(255,255,255,0.5);
 
     backdrop-filter: blur(12px);
 
