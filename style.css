@@ -362,7 +362,8 @@ tbody tr:hover {
 .vocabulary-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 8px; /* Avståndet mellan orden och strecket */
     padding: 10px 0;
     border-bottom: 1px solid var(--table-border);
 }
@@ -371,22 +372,11 @@ tbody tr:hover {
     border-bottom: none;
 }
 
-.vocabulary-item .pt {
-    font-weight: 500;
-    color: var(--text-vocab-pt);
+.vocab-text-split {
+    opacity: 0.3; /* Gör strecket lite mer diskret så det inte sticker ut för mycket */
+    font-weight: 300;
 }
 
-.vocabulary-item .en {
-    opacity: 0.7;
-}
-
-.vocab-split {
-    flex-grow: 1;
-    border-bottom: 1px dotted var(--table-border);
-    margin: 0 15px;
-    position: relative;
-    top: 4px;
-}
 
 /* Mobilanpassning för mindre skärmar */
 @media (max-width: 768px) {
