@@ -120,53 +120,87 @@ main {
 
 .verb-section {
     text-align: center;
-    margin-bottom: 60px;
+    margin: 50px 0;
+    padding: 20px 0;
+    position: relative;
+}
+
+.verb-section::before,
+.verb-section::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--table-border);
+    margin: 0 auto;
+}
+
+.verb-section::before {
+    margin-bottom: 35px;
+}
+
+.verb-section::after {
+    margin-top: 35px;
 }
 
 .verb-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
 }
 
 .language {
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+    gap: 14px;
 }
 
 .language img {
-    width: 42px;
-    height: 28px;
-    border-radius: 0;
+    width: 28px;
+    height: 20px;
+    border-radius: 4px;
     object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    opacity: 0.9;
 }
 
 #verb {
     font-family: "Playfair Display", serif;
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
+    color: var(--text-verb);
+    text-shadow: 0 2px 10px var(--glass-shadow);
 }
 
 #pronunciation {
     font-family: "Cormorant Garamond", serif;
     font-style: italic;
-    font-size: 2rem;
-    opacity: 0.65;
+    font-size: 1.6rem;
+    opacity: 0.45;
+    margin-left: -4px;
+}
+
+.language.english {
+    opacity: 0.75;
 }
 
 .english {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
+    font-family: "Inter", sans-serif;
 }
 
 .verb-info {
-    margin-top: 25px;
-    font-size: 0.9rem;
-    font-style: italic;
-    opacity: 0.55;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    font-style: normal;
+    opacity: 0.4;
 }
 
 .conjugation-section,
