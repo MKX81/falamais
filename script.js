@@ -76,22 +76,25 @@ const htmlElement = document.documentElement;
 const savedTheme = localStorage.getItem('theme');
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+const sunIcon = `<svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>`;
+const moonIcon = `<svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>`;
+
 if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
     htmlElement.classList.add('dark');
-    themeToggle.textContent = '🌙';
+    themeToggle.innerHTML = moonIcon;
 } else {
     htmlElement.classList.remove('dark');
-    themeToggle.textContent = '☀️';
+    themeToggle.innerHTML = sunIcon;
 }
 
 themeToggle.addEventListener('click', () => {
     if (htmlElement.classList.contains('dark')) {
         htmlElement.classList.remove('dark');
-        themeToggle.textContent = '☀️';
+        themeToggle.innerHTML = sunIcon;
         localStorage.setItem('theme', 'light');
     } else {
         htmlElement.classList.add('dark');
-        themeToggle.textContent = '🌙';
+        themeToggle.innerHTML = moonIcon;
         localStorage.setItem('theme', 'dark');
     }
 });
