@@ -77,4 +77,164 @@
       }
     ]
   }
+,
+  {
+    "infinitive": "ir",
+    "pronunciation": "EER",
+    "english": "go",
+    "type": "irregular -ir verb",
+    "learning": {
+      "frequency_rank": 8,
+      "difficulty": 3,
+      "importance": 5,
+      "learning_priority": 45,
+      "level": "A1"
+    },
+    "present": {
+      "eu": "vou",
+      "você": "vai",
+      "ele/ela": "vai",
+      "nós": "vamos",
+      "eles/elas": "vão"
+    },
+    "perfect": {
+      "eu": "fui",
+      "você": "foi",
+      "ele/ela": "foi",
+      "nós": "fomos",
+      "eles/elas": "foram"
+    },
+    "imperfect": {
+      "eu": "ia",
+      "você": "ia",
+      "ele/ela": "ia",
+      "nós": "íamos",
+      "eles/elas": "iam"
+    },
+    "future": {
+      "eu": "irei",
+      "você": "irá",
+      "ele/ela": "irá",
+      "nós": "iremos",
+      "eles/elas": "irão"
+    },
+    "gerund": "indo",
+    "examples": [
+      {
+        "pt": "Eu vou ao supermercado local para comprar alguns ingredientes necessários para o jantar.",
+        "en": "I am going to the local supermarket to buy some necessary ingredients for dinner."
+      },
+      {
+        "pt": "Ontem, nós fomos a uma praia muito bonita e ficámos lá até ao pôr do sol.",
+        "en": "Yesterday, we went to a very beautiful beach and stayed there until sunset."
+      },
+      {
+        "pt": "Eles irão a Lisboa na próxima semana para visitar os seus familiares.",
+        "en": "They will go to Lisbon next week to visit their relatives."
+      }
+    ],
+    "vocabulary": [
+      {
+        "pt": "supermercado",
+        "en": "supermarket",
+        "type": "noun"
+      },
+      {
+        "pt": "praia",
+        "en": "beach",
+        "type": "noun"
+      },
+      {
+        "pt": "jantar",
+        "en": "dinner",
+        "type": "noun"
+      },
+      {
+        "pt": "semana",
+        "en": "week",
+        "type": "noun"
+      }
+    ]
+  }
+,
+  {
+    "infinitive": "ser",
+    "pronunciation": "SEHR",
+    "english": "be (permanent/characteristic)",
+    "type": "irregular -er verb",
+    "learning": {
+      "frequency_rank": 3,
+      "difficulty": 3,
+      "importance": 5,
+      "learning_priority": 50,
+      "level": "A1"
+    },
+    "present": {
+      "eu": "sou",
+      "você": "é",
+      "ele/ela": "é",
+      "nós": "somos",
+      "eles/elas": "são"
+    },
+    "perfect": {
+      "eu": "fui",
+      "você": "foi",
+      "ele/ela": "foi",
+      "nós": "fomos",
+      "eles/elas": "foram"
+    },
+    "imperfect": {
+      "eu": "era",
+      "você": "era",
+      "ele/ela": "era",
+      "nós": "éramos",
+      "eles/elas": "eram"
+    },
+    "future": {
+      "eu": "serei",
+      "você": "será",
+      "ele/ela": "será",
+      "nós": "seremos",
+      "eles/elas": "serão"
+    },
+    "gerund": "sendo",
+    "examples": [
+      {
+        "pt": "Eu sou um estudante de engenharia na universidade pública desta grande cidade.",
+        "en": "I am an engineering student at the public university in this big city."
+      },
+      {
+        "pt": "O filme de ontem foi muito divertido e interessante para toda a família.",
+        "en": "Yesterday's movie was very fun and interesting for the whole family."
+      },
+      {
+        "pt": "No futuro, nós seremos profissionais experientes na nossa área de trabalho.",
+        "en": "In the future, we will be experienced professionals in our field of work."
+      }
+    ],
+    "vocabulary": [
+      {
+        "pt": "estudante",
+        "en": "student",
+        "type": "noun"
+      },
+      {
+        "pt": "filme",
+        "en": "movie",
+        "type": "noun"
+      },
+      {
+        "pt": "cidade",
+        "en": "city",
+        "type": "noun"
+      },
+      {
+        "pt": "trabalho",
+        "en": "work / job",
+        "type": "noun"
+      }
+    ]
+  }
 ]
+
+
