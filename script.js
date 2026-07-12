@@ -96,6 +96,7 @@ function renderVerb(verb) {
         `;
         vocabulary.appendChild(item);
     });
+} // <--- DENNA MÅSVINGE SAKNADES HÄR FÖR ATT STÄNGA RENDERVERB!
 
 function highlightVerb(sentence, verb) {
     const regex = new RegExp("\\b" + verb + "\\b", "i");
