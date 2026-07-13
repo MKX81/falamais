@@ -54,7 +54,6 @@ body {
     padding: 80px 25px 50px;
 }
 
-/* --- Knappar --- */
 #theme-toggle,
 #shuffle-btn {
     position: absolute;
@@ -75,50 +74,376 @@ body {
     z-index: 1000;
 }
 
-/* Placera knapparna i översta hörnet så de inte krockar */
-#shuffle-btn { right: 74px; }
-#theme-toggle { right: 20px; }
+#theme-toggle {
+    right: 20px;
+}
 
-/* --- Grundstil för tabell --- */
-table {
-    width: 100%;
-    border-collapse: collapse;
+#shuffle-btn {
+    right: 74px;
+}
+
+#theme-toggle:active,
+#shuffle-btn:active {
+    transform: scale(0.95);
+}
+
+#theme-toggle svg,
+#shuffle-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--text-main);
+    fill: none;
+    transition: stroke 0.2s ease;
+}
+
+main {
+    width: min(900px, 100%);
+    margin: 0 auto;
+}
+
+.example-main {
+    text-align: center;
+    margin-bottom: 45px;
+    padding: 20px 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 20px 0 var(--glass-shadow);
+}
+
+#main-example-pt {
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0 auto 10px;
+}
+
+.highlight-verb {
+    color: var(--text-pt);
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#main-example-en {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 400;
+    opacity: 0.65;
+    margin: 5px 0 0;
+    letter-spacing: 0.02em;
+}
+
+.verb-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px 0;
+    position: relative;
+}
+
+.verb-section::before,
+.verb-section::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--table-border);
+    margin: 0 auto;
+}
+
+.verb-section::before {
+    margin-bottom: 35px;
+}
+
+.verb-section::after {
+    margin-top: 35px;
+}
+
+.verb-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.language img {
+    width: 28px;
+    height: 20px;
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    opacity: 0.9;
+}
+
+#verb {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--text-pt);
+    text-shadow: 0 2px 10px var(--glass-shadow);
+}
+
+#pronunciation {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    opacity: 0.45;
+    margin-left: -4px;
+}
+
+.language.english {
+    opacity: 0.75;
+}
+
+.english {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+.verb-info {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    font-style: normal;
+    opacity: 0.4;
+}
+
+.conjugation-section,
+.practice-section {
+    margin-bottom: 70px;
+    padding: 40px 45px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 var(--glass-shadow);
+}
+
+.practice-section {
+    display: flex;
+    gap: 40px;
+}
+
+.practice-section .inner-section {
+    flex: 1;
+    min-width: 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
     margin-bottom: 25px;
 }
 
-th, td {
-    padding: 12px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+thead {
+    opacity: 0.55;
+    font-size: 0.85rem;
+}
+
+th {
     text-align: left;
+    padding: 12px 8px;
+    font-weight: 400;
+}
+
+td {
+    padding: 12px 8px;
+    border-bottom: 1px solid var(--table-border);
+    color: var(--text-pt);
+}
+
+td:first-child {
+    font-weight: 500;
+    color: var(--text-main);
+    opacity: 0.85;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: var(--table-hover);
+}
+
+.gerund-wrapper {
+    text-align: center;
+    border-top: 1px solid var(--table-border);
+    padding-top: 30px;
+    margin-top: 10px;
+}
+
+.gerund-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+
+.gerund-explain {
+    font-family: "Inter", sans-serif;
+    font-size: 0.85rem;
+    opacity: 0.55;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+#gerund {
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0;
+    color: var(--text-pt);
+}
+
+.example-block {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: 1px solid var(--table-border);
 }
 
-
-/* ==========================================================================
-   NYA TILLÄGG: Fixar stor text på verbet och tar bort x-ledsrullning på mobil
-   ========================================================================== */
-
-/* 1. Gör ditt gröna huvudverb större (Använder ID från din första index.html) */
-#main-example-pt {
-    font-size: 1.85rem; 
-    font-weight: 700;
-    color: var(--text-pt);
-    margin-bottom: 8px;
-    line-height: 1.3;
+.example-block:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
-/* 2. Mobilanpassning för skärmar under 600px bredd */
-@media (max-width: 600px) {
-    body {
-        padding: 80px 15px 40px; /* Minskar sidmarginalen för att ge tabellen mer plats */
-    }
+.example-pt {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-pt);
+    margin: 0 0 5px 0;
+}
 
-    #main-example-pt {
-        font-size: 1.45rem; /* Något mer balanserad på mobilskärmen */
-    }
+.example-en {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin: 0;
+}
 
-    /* Krymper tabellcellernas utrymme så att alla 5 kolumner får plats i bredd */
-    th, td {
-        padding: 8px 4px; 
-        font-size: 0.8rem; /* Gör texten kompakt nog för att rymmas utan x-rullning */
+/* Centrerar glosraderna direkt under Vocabulary-rubriken */
+.vocabulary-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: none;
+}
+
+.vocabulary-item:last-child {
+    border-bottom: none;
+}
+
+.vocabulary-item .pt {
+    font-weight: 600;
+    color: var(--text-vocab-pt);
+}
+
+.vocabulary-item .en {
+    opacity: 0.7;
+}
+
+.vocab-text-split {
+    opacity: 0.3;
+    font-weight: 300;
+}
+
+/* Grammar Guide & Footer Styling - Slimmad & Diskret */
+footer {
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px 25px;
+    border-top: 1px solid var(--table-border);
+}
+
+.footer-content {
+    width: min(900px, 100%);
+    margin: 0 auto;
+}
+
+.grammar-inline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Tätt mellan raderna */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.grammar-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 0.7rem; /* Liten och diskret text (ca 11px) */
+    line-height: 1.4;
+}
+
+.grammar-title {
+    font-weight: 600;
+    color: var(--text-pt);
+    min-width: 130px; /* Håller namnen på tempus snyggt justerade till vänster */
+}
+
+.grammar-split {
+    opacity: 0.2;
+    font-weight: 300;
+}
+
+.grammar-desc {
+    opacity: 0.6; /* Gör förklaringen mer dämpad */
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.65rem;
+    opacity: 0.4;
+    letter-spacing: 0.05em;
+}
+
+
+/* Mobilanpassning för Examples och Vocabulary */
+@media (max-width: 768px) {
+    .practice-section {
+        flex-direction: column;
+        gap: 50px;
     }
 }
