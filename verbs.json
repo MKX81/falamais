@@ -547,7 +547,87 @@
       "type": "adjective"
     }
   ]
-}
+}, 
+
+    {
+    "infinitive": "poder",
+    "pronunciation": "po-DEHR",
+    "english": "be able to / can / may",
+    "type": "irregular -er verb",
+    "learning": {
+      "frequency_rank": 11,
+      "difficulty": 3,
+      "importance": 5,
+      "learning_priority": 44,
+      "level": "A1"
+    },
+    "present": {
+      "eu": "posso",
+      "você": "pode",
+      "ele/ela": "pode",
+      "nós": "podemos",
+      "eles/elas": "podem"
+    },
+    "perfect": {
+      "eu": "pude",
+      "você": "pôde",
+      "ele/ela": "pôde",
+      "nós": "pudemos",
+      "eles/elas": "puderam"
+    },
+    "imperfect": {
+      "eu": "podia",
+      "você": "podia",
+      "ele/ela": "podia",
+      "nós": "podíamos",
+      "eles/elas": "podiam"
+    },
+    "future": {
+      "eu": "poderei",
+      "você": "poderá",
+      "ele/ela": "poderá",
+      "nós": "poderemos",
+      "eles/elas": "poderão"
+    },
+    "gerund": "podendo",
+    "examples": [
+      {
+        "pt": "Eu não posso ir ao cinema com vocês hoje porque preciso terminar um trabalho.",
+        "en": "I cannot go to the movies with you today because I need to finish some work."
+      },
+      {
+        "pt": "Ela não pôde viajar no fim de semana passado por causa do trânsito ruim.",
+        "en": "She could not travel last weekend because of the bad traffic."
+      },
+      {
+        "pt": "Se tudo der certo, nós poderemos comprar os ingressos amanhã de manhã.",
+        "en": "If everything goes well, we will be able to buy the tickets tomorrow morning."
+      }
+    ],
+    "vocabulary": [
+      {
+        "pt": "cinema",
+        "en": "movies / cinema",
+        "type": "noun"
+      },
+      {
+        "pt": "fim de semana",
+        "en": "weekend",
+        "type": "noun"
+      },
+      {
+        "pt": "trânsito",
+        "en": "traffic",
+        "type": "noun"
+      },
+      {
+        "pt": "ingresso",
+        "en": "ticket",
+        "type": "noun"
+      }
+    ]
+  }
+
 
 ]
 
