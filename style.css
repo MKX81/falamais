@@ -114,6 +114,70 @@ body {
     fill: none;
     transition: stroke 0.2s ease;
 }
+/* popup-fönstret (modalen) */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 var(--glass-shadow);
+    margin: 10% auto;
+    padding: 30px;
+    width: min(500px, 90%);
+    border-radius: 16px;
+    max-height: 70vh;
+    overflow-y: auto;
+    color: var(--text-main);
+}
+
+.close-modal {
+    color: var(--text-main);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.close-modal:hover { 
+    opacity: 1; 
+}
+
+/* Verbrader inuti listan */
+.verb-list-item {
+    padding: 12px 8px;
+    border-bottom: 1px solid var(--table-border);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    transition: background 0.2s;
+}
+
+.verb-list-item:hover {
+    background: var(--table-hover);
+}
+
+.verb-list-item .pt-name {
+    font-weight: 500;
+    color: var(--text-pt);
+}
+
+.verb-list-item .en-name {
+    opacity: 0.6;
+    font-style: italic;
+}
 
 
 main {
