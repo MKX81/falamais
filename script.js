@@ -4,9 +4,16 @@ let allVerbs = []; // Sparar alla verb globalt så vi kan slumpa utan att hämta
 const sunIcon = `<svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>`;
 const moonIcon = `<svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>`;
 const shuffleIcon = `<svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>`;
+const listIcon = `<svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>`;
 
-// Lägg till shuffle-ikonen i knappen så fort sidan laddas
+// Lägg till ikonerna i knapparna så fort sidan laddas
 document.getElementById("shuffle-btn").innerHTML = shuffleIcon;
+document.getElementById("list-btn").innerHTML = listIcon;
+
+// Globala element för modalen
+const modal = document.getElementById("list-modal");
+const listBtn = document.getElementById("list-btn");
+const closeModal = document.querySelector(".close-modal");
 
 // Hämta verben från JSON-filen
 fetch("verbs.json")
@@ -14,6 +21,9 @@ fetch("verbs.json")
     .then(verbs => {
         allVerbs = verbs; // Sparar verben i vår globala variabel
         
+        // Bygg upp listan i modalen i förväg
+        populateVerbsList(verbs);
+
         // Räkna ut dagens unika verb (behåller din logik)
         const day = Math.floor(Date.now() / 86400000);
         const dailyVerb = verbs[day % verbs.length];
@@ -28,14 +38,32 @@ fetch("verbs.json")
 // Lyssnare för slumpknappen
 document.getElementById("shuffle-btn").addEventListener("click", () => {
     if (allVerbs.length === 0) return;
-    
-    // Slumpa fram ett index
     const randomIndex = Math.floor(Math.random() * allVerbs.length);
-    const randomVerb = allVerbs[randomIndex];
-    
-    // Visa det slumpade verbet
-    renderVerb(randomVerb);
+    renderVerb(allVerbs[randomIndex]);
 });
+
+// Funktion som skapar listan över alla tillgängliga verb i modalen
+function populateVerbsList(verbs) {
+    const container = document.getElementById("verbs-list-container");
+    container.innerHTML = "";
+
+    verbs.forEach((verb) => {
+        const item = document.createElement("div");
+        item.className = "verb-list-item";
+        item.innerHTML = `
+            <span class="pt-name">${verb.infinitive}</span>
+            <span class="en-name">to ${verb.english}</span>
+        `;
+        
+        // Klickhändelse för att välja verbet från listan
+        item.addEventListener("click", () => {
+            renderVerb(verb);
+            modal.style.display = "none"; // Stäng modalen efter val
+        });
+        
+        container.appendChild(item);
+    });
+}
 
 // Funktion som sköter all rendering av ett specifikt verb på sidan
 function renderVerb(verb) {
@@ -54,7 +82,6 @@ function renderVerb(verb) {
     document.getElementById("translation").textContent = "to " + verb.english;
     document.getElementById("type").textContent = verb.type;
 
-    // Hämta de två nya tabellkropparna
     const conjugationMain = document.getElementById("conjugation-main");
     const conjugationFuture = document.getElementById("conjugation-future");
     
@@ -116,6 +143,22 @@ function highlightVerb(sentence, verb) {
     const regex = new RegExp("\\b" + verb + "\\b", "i");
     return sentence.replace(regex, `<span class="highlight-verb">${verb}</span>`);
 }
+
+// Hantering av modalens öppning och stängning
+listBtn.addEventListener("click", () => {
+    modal.style.display = "block";
+});
+
+closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Stäng modalen om användaren klickar utanför rutan
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
 
 // Hantering av mörkt/ljust tema
 const themeToggle = document.getElementById('theme-toggle');
