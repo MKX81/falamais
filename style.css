@@ -447,4 +447,23 @@ footer {
         flex-direction: column;
         gap: 50px;
     }
+
+    body {
+        padding: 60px 12px 30px;
+    }
+
+    .conjugation-section {
+        padding: 20px 12px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 10px 4px;
+        font-size: 0.9rem;
+    }
 }
+
