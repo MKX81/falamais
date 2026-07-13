@@ -54,7 +54,7 @@ body {
     padding: 80px 25px 50px;
 }
 
-/* --- Knappar och Layout --- */
+/* --- Knappar --- */
 #theme-toggle,
 #shuffle-btn {
     position: absolute;
@@ -75,36 +75,83 @@ body {
     z-index: 1000;
 }
 
-/* --- Grönt huvudverb (Main Example) --- */
+#shuffle-btn { right: 74px; }
+#theme-toggle { right: 20px; }
+
+/* --- Större text på gröna verbet --- */
 .main-example {
-    font-size: 1.6rem;
+    font-size: 1.75rem; /* Rejäl storlek på desktop */
     font-weight: 700;
     color: var(--text-pt);
     margin-bottom: 20px;
+    line-height: 1.3;
 }
 
-/* --- Mobilanpassning för Konjugationer --- */
-.table-container {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin-bottom: 25px;
-    border-radius: 8px; /* Valfritt: matchar ett mjukt utseende */
-}
-
+/* --- Standard Tabell-layout (Dator) --- */
 table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 450px; /* Tvingar tabellen att hålla sin form så man kan rulla i sidled på mobilen */
+    margin-bottom: 25px;
 }
 
-/* --- Responsiva justeringar för mindre skärmar --- */
-@media (max-width: 480px) {
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--table-border);
+}
+
+/* --- Mobilanpassning UTAN rullning (Media Query) --- */
+@media (max-width: 600px) {
     body {
-        padding: 80px 15px 40px; /* Minskar sidmarginalen på mobilen från 25px till 15px */
+        padding: 80px 16px 40px; /* Mer utrymme på sidorna */
     }
 
     .main-example {
-        font-size: 1.35rem; /* Något mer balanserad textstorlek på små skärmar */
+        font-size: 1.4rem; /* Anpassad men ändå stor på mobil */
     }
+
+    /* Gör om tabellen till block-layout */
+    table, theme, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Göm den vanliga tabellrubriken */
+    thead {
+        display: none;
+    }
+
+    /* Varje person-rad blir ett eget litet kort */
+    tr {
+        margin-bottom: 20px;
+        padding: 12px;
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: 8px;
+        box-shadow: 0 2px 8px var(--glass-shadow);
+    }
+
+    /* Styla pronomenet (första cellen i varje rad) extra tydligt */
+    tr td:first-child {
+        font-weight: 700;
+        font-size: 1.1rem;
+        border-bottom: 2px solid var(--divider-color);
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        color: var(--text-vocab-pt);
+    }
+
+    /* Alla andra celler (verbböjningarna) */
+    td {
+        border: none;
+        padding: 4px 0;
+        font-size: 0.95rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Skapar automatiska textetiketter före varje verbböjning på mobilen */
+    td:nth-child(2)::before { content: "Present: "; font-weight: 600; opacity: 0.7; }
+    td:nth-child(3)::before { content: "Perfect: "; font-weight: 600; opacity: 0.7; }
+    td:nth-child(4)::before { content: "Imperfect: "; font-weight: 600; opacity: 0.7; }
+    td:nth-child(5)::before { content: "Future: "; font-weight: 600; opacity: 0.7; }
 }
