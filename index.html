@@ -12,6 +12,7 @@
 <body>
 
     <!-- Knapparna för tema och slumpning i övre högra hörnet -->
+    <button id="list-btn" aria-label="Open list"></button>
     <button id="shuffle-btn" aria-label="Randomize verb"></button>
     <button id="theme-toggle" aria-label="Toggle theme"></button>
 
@@ -123,7 +124,14 @@
         </div>
     </div>
 </footer>
-
+<!-- NYTT: Modal-fönster för verblistan -->
+    <div id="list-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>All Verbs</h2>
+            <div id="verbs-list-container"></div>
+        </div>
+    </div>
 
 
     <script src="script.js"></script>
