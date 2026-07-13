@@ -110,9 +110,10 @@ th, td {
         font-size: 1.4rem; /* Anpassad men ändå stor på mobil */
     }
 
-    /* Gör om tabellen till block-layout */
-    table, theme, tbody, th, td, tr {
+    /* Gör om tabellstrukturen till block för kort-layout */
+    table, tbody, tr {
         display: block;
+        width: 100%;
     }
 
     /* Göm den vanliga tabellrubriken */
@@ -130,23 +131,27 @@ th, td {
         box-shadow: 0 2px 8px var(--glass-shadow);
     }
 
+    /* Alla celler (både pronomen och verbböjningar) blir flex-rader */
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 6px 0;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+
     /* Styla pronomenet (första cellen i varje rad) extra tydligt */
     tr td:first-child {
         font-weight: 700;
         font-size: 1.1rem;
         border-bottom: 2px solid var(--divider-color);
         margin-bottom: 8px;
-        padding-bottom: 4px;
+        padding-bottom: 6px;
         color: var(--text-vocab-pt);
-    }
-
-    /* Alla andra celler (verbböjningarna) */
-    td {
-        border: none;
-        padding: 4px 0;
-        font-size: 0.95rem;
-        display: flex;
-        justify-content: space-between;
+        display: block; /* Håller pronomenet på en egen fullbreddsrad */
+        text-align: left;
     }
 
     /* Skapar automatiska textetiketter före varje verbböjning på mobilen */
