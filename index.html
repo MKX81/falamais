@@ -41,30 +41,43 @@
             </p>
         </div>
 
-        <!-- Conjugation & Gerundium Block -->
         <div class="conjugation-section">
-            <h2>Conjugation</h2>
+    <h2>Conjugation</h2>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pronome</th>
-                        <th>Pres.</th>
-                        <th>Pr. Perfeito</th>
-                        <th>Pr. Imperfeito</th>
-                        <th>Futuro</th>
-                    </tr>
-                </thead>
-                <tbody id="conjugation">
-                </tbody>
-            </table>
+    <!-- Huvudtabell för Nutid och Dåtid -->
+    <table class="conjugation-table">
+        <thead>
+            <tr>
+                <th>Pronome</th>
+                <th>Pres.</th>
+                <th>Pr. Perfeito</th>
+                <th>Pr. Imperfeito</th>
+            </tr>
+        </thead>
+        <tbody id="conjugation-main">
+            <!-- Fylls i med JavaScript (Pres, Pr. Perf, Pr. Imperf) -->
+        </tbody>
+    </table>
 
-            <!-- Gerundium -->
-            <div class="gerund-wrapper">
-                <h3 class="gerund-title">Gerundium <span class="gerund-explain">(action as a noun, e.g. running)</span></h3>
-                <p id="gerund"></p>
-            </div>
-        </div>
+    <!-- Separat tabell för Framtid (Futuro) -->
+    <table class="conjugation-table future-table">
+        <thead>
+            <tr>
+                <th>Pronome</th>
+                <th>Futuro</th>
+            </tr>
+        </thead>
+        <tbody id="conjugation-future">
+            <!-- Fylls i med JavaScript (Futuro) -->
+        </tbody>
+    </table>
+
+    <!-- Gerundium -->
+    <div class="gerund-wrapper">
+        <h3 class="gerund-title">Gerundium <span class="gerund-explain">(action as a noun, e.g. running)</span></h3>
+        <p id="gerund"></p>
+    </div>
+</div>
 
         <!-- Examples & Vocabulary Block -->
         <div class="practice-section">
