@@ -265,11 +265,35 @@ h3 {
     margin-bottom: 25px;
 }
 
-table {
+/* Gemensam stil för båda tabellerna */
+.conjugation-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 1rem;
+    table-layout: fixed; /* Tvingar fasta kolumnbredder */
+}
+
+/* Specifik layout för huvudtabellen (4 kolumner) */
+.conjugation-table:not(.future-table) th,
+.conjugation-table:not(.future-table) td {
+    width: 25%;
+}
+
+/* Specifik layout för futurotabellen */
+.future-table {
+    margin-top: 20px;
     margin-bottom: 35px;
+}
+
+.future-table th,
+.future-table td {
+    /* Matchar bredden på Pronome (25%) och låter Futuro ta resten */
+    width: 75%; 
+}
+
+.future-table th:first-child,
+.future-table td:first-child {
+    width: 25%;
 }
 
 thead {
@@ -333,6 +357,7 @@ tbody tr:hover {
     margin: 0;
     color: var(--text-pt);
 }
+
 
 .example-block {
     margin-bottom: 20px;
