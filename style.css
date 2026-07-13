@@ -125,6 +125,7 @@ main {
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-weight: 600;
+    font-size: 1,5rem;
 }
 
 #main-example-en {
@@ -225,7 +226,7 @@ main {
 .conjugation-section,
 .practice-section {
     margin-bottom: 70px;
-    padding: 40px 45px;
+    padding: 30px 35px;
     border-radius: 16px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -236,7 +237,7 @@ main {
 
 .practice-section {
     display: flex;
-    gap: 40px;
+    gap: 35px;
 }
 
 .practice-section .inner-section {
