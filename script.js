@@ -54,20 +54,34 @@ function renderVerb(verb) {
     document.getElementById("translation").textContent = "to " + verb.english;
     document.getElementById("type").textContent = verb.type;
 
-    const conjugation = document.getElementById("conjugation");
-    conjugation.innerHTML = "";
+    // Hämta de två nya tabellkropparna
+    const conjugationMain = document.getElementById("conjugation-main");
+    const conjugationFuture = document.getElementById("conjugation-future");
+    
+    // Töm båda tabellerna innan rendering
+    conjugationMain.innerHTML = "";
+    conjugationFuture.innerHTML = "";
+    
     const persons = ["eu", "você", "ele/ela", "nós", "eles/elas"];
 
     persons.forEach(person => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
+        // Skapa rad för huvudtabellen (Nutid och Dåtid)
+        const mainRow = document.createElement("tr");
+        mainRow.innerHTML = `
             <td>${person}</td>
             <td>${verb.present[person]}</td>
             <td>${verb.perfect[person]}</td>
             <td>${verb.imperfect[person]}</td>
+        `;
+        conjugationMain.appendChild(mainRow);
+
+        // Skapa rad för framtidstabellen (Futuro)
+        const futureRow = document.createElement("tr");
+        futureRow.innerHTML = `
+            <td>${person}</td>
             <td>${verb.future[person]}</td>
         `;
-        conjugation.appendChild(row);
+        conjugationFuture.appendChild(futureRow);
     });
 
     document.getElementById("gerund").textContent = verb.gerund;
@@ -96,7 +110,7 @@ function renderVerb(verb) {
         `;
         vocabulary.appendChild(item);
     });
-} // <--- DENNA MÅSVINGE SAKNADES HÄR FÖR ATT STÄNGA RENDERVERB!
+}
 
 function highlightVerb(sentence, verb) {
     const regex = new RegExp("\\b" + verb + "\\b", "i");
