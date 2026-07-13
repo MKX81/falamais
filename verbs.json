@@ -23,7 +23,7 @@
       "você": "falou",
       "ele/ela": "falou",
       "nós": "falamos",
-      "eles/elas": "fataram"
+      "eles/elas": "falaram"
     },
     "imperfect": {
       "eu": "falava",
@@ -125,12 +125,12 @@
         "en": "I am going to the local supermarket to buy some necessary ingredients for dinner."
       },
       {
-        "pt": "Ontem, nós fomos a uma praia muito bonita e ficámos lá até ao pôr do sol.",
+        "pt": "Ontem, nós fomos a uma praia muito bonita e ficamos lá até o pôr do sol.",
         "en": "Yesterday, we went to a very beautiful beach and stayed there until sunset."
       },
       {
-        "pt": "Eles irão a Lisboa na próxima semana para visitar os seus familiares.",
-        "en": "They will go to Lisbon next week to visit their relatives."
+        "pt": "Eles vão viajar para o Rio na próxima semana para visitar seus familiares.",
+        "en": "They are going to travel to Rio next week to visit their relatives."
       }
     ],
     "vocabulary": [
@@ -204,11 +204,11 @@
         "en": "I am an engineering student at the public university in this big city."
       },
       {
-        "pt": "O filme de ontem foi muito divertido e interessante para toda a família.",
+        "pt": "O filme de ontem foi muito divertido e interessante para toda família.",
         "en": "Yesterday's movie was very fun and interesting for the whole family."
       },
       {
-        "pt": "No futuro, nós seremos profissionais experientes na nossa área de trabalho.",
+        "pt": "No futuro, nós seremos profissionais experientes em nossa área de trabalho.",
         "en": "In the future, we will be experienced professionals in our field of work."
       }
     ],
