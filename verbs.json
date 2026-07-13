@@ -469,7 +469,86 @@
         "type": "noun"
       }
     ]
-  }
+  }, 
+  {
+  "infinitive": "estar",
+  "pronunciation": "es-TAR",
+  "english": "be (temporary state/location)",
+  "type": "irregular verb",
+  "learning": {
+    "frequency_rank": 4,
+    "difficulty": 3,
+    "importance": 5,
+    "learning_priority": 4,
+    "level": "A1"
+  },
+  "present": {
+    "eu": "estou",
+    "você": "está",
+    "ele/ela": "está",
+    "nós": "estamos",
+    "eles/elas": "estão"
+  },
+  "perfect": {
+    "eu": "estive",
+    "você": "esteve",
+    "ele/ela": "esteve",
+    "nós": "estivemos",
+    "eles/elas": "estiveram"
+  },
+  "imperfect": {
+    "eu": "estava",
+    "você": "estava",
+    "ele/ela": "estava",
+    "nós": "estávamos",
+    "eles/elas": "estavam"
+  },
+  "future": {
+    "eu": "estarei",
+    "você": "estará",
+    "ele/ela": "estará",
+    "nós": "estaremos",
+    "eles/elas": "estarão"
+  },
+  "gerund": "estando",
+  "examples": [
+    {
+      "pt": "Eu estou muito feliz com o resultado do meu projeto de programação.",
+      "en": "I am very happy with the result of my programming project."
+    },
+    {
+      "pt": "Ela esteve no Rio de Janeiro na semana passada para um congresso importante.",
+      "en": "She was in Rio de Janeiro last week for an important conference."
+    },
+    {
+      "pt": "Nós estávamos cansados depois de caminhar tanto tempo pelo parque.",
+      "en": "We were tired after walking for so long through the park."
+    }
+  ],
+  "vocabulary": [
+    {
+      "pt": "feliz",
+      "en": "happy",
+      "type": "adjective"
+    },
+    {
+      "pt": "resultado",
+      "en": "result",
+      "type": "noun"
+    },
+    {
+      "pt": "passada",
+      "en": "last / past",
+      "type": "adjective"
+    },
+    {
+      "pt": "cansados",
+      "en": "tired",
+      "type": "adjective"
+    }
+  ]
+}
+
 ]
 
 
